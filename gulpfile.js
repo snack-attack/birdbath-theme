@@ -7,6 +7,14 @@ let concat = require('gulp-concat');
 let imagemin = require('gulp-imagemin');
 let browserSync = require('browser-sync').create();
 
+
+
+/* TO-DO */
+///add minify-imgs to default build
+///create default task (something not working in callbacks?)
+
+
+
 //compile sass and minify css
 
 gulp.task("sass", () => {
@@ -46,6 +54,12 @@ gulp.task("watch-js", () => {
     return gulp.watch("./js/*.js", gulp.series("minify-js"));
 });
 
+gulp.task("minify-imgs", () =>
+    gulp.src('src/images/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('dist/images'))
+);
+
 //task to watch just css + js
 
 gulp.task("watch", () => {
@@ -66,4 +80,4 @@ gulp.task("serve", () => {
     gulp.watch("./js/*.js", gulp.series("minify-js"))
 });
 
-gulp.task('default', ['serve']);
+//gulp.task('default', ['serve', 'watch']);
