@@ -10,54 +10,55 @@ let browserSync = require('browser-sync').create();
 
 //compile sass and minify css
 
-gulp.task('sass', function () {
-    var stream = gulp.src('./scss/styles.scss')
+gulp.task("sass", () => {
+    return gulp.src("./scss/styles.scss")
         .pipe(sass())
-        .pipe(gulp.dest('./dist/css/'))
-        .pipe(rename('styles.css'));
-    return stream;
+        .pipe(gulp.dest("./dist/css/"))
+        .pipe(rename("styles.css"))
+        .pipe(browserSync.stream());
 });
 
-gulp.task('minify-css', () => {
-    return gulp.src('css/styles.css')
-      .pipe(cleanCSS({compatibility: 'ie8'}))
-      .pipe(rename({suffix: '.min'}))
-      .pipe(gulp.dest('./css/'));
-  });
+gulp.task("minify-css", () => {
+    return gulp.src("./dist/css/styles.css")
+        .pipe(cleanCSS({compatibility: "ie8"}))
+        .pipe(rename({suffix: ".min"}))
+        .pipe(gulp.dest("./dist/css/"))
+        .pipe(browserSync.stream());
+});
   
 gulp.task('styles', gulp.series('sass', 'minify-css'));
 
 //combine then minify js files
 
-gulp.task('scripts', function() {
-    return gulp.src('./*.js')
-      .pipe(concat('bundle.js'))
-      .pipe(gulp.dest('./dist/'));
-  });
+// gulp.task('scripts', function() {
+//     return gulp.src('./*.js')
+//       .pipe(concat('bundle.js'))
+//       .pipe(gulp.dest('./dist/'));
+//   });
 
-gulp.task("uglify", function () {
-    return gulp.src("lib/bundle.js")
-        .pipe(rename("bundle.min.js"))
-        .pipe(uglify(/* options */))
-        .pipe(gulp.dest("lib/"));
-});
+// gulp.task("uglify", function () {
+//     return gulp.src("lib/bundle.js")
+//         .pipe(rename("bundle.min.js"))
+//         .pipe(uglify(/* options */))
+//         .pipe(gulp.dest("lib/"));
+// });
 
 
-// watch & default tasks
+// // watch & default tasks
 
-gulp.task('watch', function () {
-	return gulp.watch('./scss/*.scss', gulp.series('styles'));
-});
+// gulp.task('watch', function () {
+// 	return gulp.watch('./scss/*.scss', gulp.series('styles'));
+// });
 
-// Static Server + watching scss/html files
-gulp.task('serve', ['sass'], function() {
+// // Static Server + watching scss/html files
+// gulp.task('serve', ['sass'], function() {
 
-    browserSync.init({
-        server: "./"
-    });
+//     browserSync.init({
+//         server: "./"
+//     });
 
-    gulp.watch("./scss/*.scss", ['sass']);
-    gulp.watch("./*.html").on('change', browserSync.reload);
-});
+//     gulp.watch("./scss/*.scss", ['sass']);
+//     gulp.watch("./*.html").on('change', browserSync.reload);
+// });
 
-gulp.task('default', ['styles', 'serve']);
+// gulp.task('default', ['styles', 'serve']);
