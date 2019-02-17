@@ -18,3 +18,4 @@ gulp.task('minify-css', () => {
       .pipe(gulp.dest('./css/'));
   });
   
+gulp.task('styles', gulp.series('sass', 'minify-css'));
