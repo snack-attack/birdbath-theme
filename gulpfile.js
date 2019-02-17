@@ -54,6 +54,8 @@ gulp.task("watch-js", () => {
     return gulp.watch("./js/*.js", gulp.series("minify-js"));
 });
 
+//minify images
+
 gulp.task("minify-imgs", () =>
     gulp.src('src/images/*')
         .pipe(imagemin())
