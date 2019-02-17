@@ -3,7 +3,6 @@ let cleanCSS = require('gulp-clean-css');
 let rename = require('gulp-rename');
 let sass = require('gulp-sass');
 let uglify = require('gulp-uglify-es');
-let autoprefix = require('gulp-autoprefixer');
 let concat = require('gulp-concat');
 let imagemin = require('gulp-imagemin');
 let browserSync = require('browser-sync').create();
@@ -26,39 +25,45 @@ gulp.task("minify-css", () => {
         .pipe(browserSync.stream());
 });
   
-gulp.task('styles', gulp.series('sass', 'minify-css'));
+gulp.task("styles", gulp.series('sass', 'minify-css'));
+
+gulp.task("watch-css", () => {
+    return gulp.watch("./scss/*.scss", gulp.series("styles"));
+});
 
 //combine then minify js files
 
-// gulp.task('scripts', function() {
-//     return gulp.src('./*.js')
-//       .pipe(concat('bundle.js'))
-//       .pipe(gulp.dest('./dist/'));
-//   });
+gulp.task("minify-js", () => {
+    return gulp.src(["./js/jquery-*.js", "./js/popper.js", "./js/bootstrap.js", "./js/*.js"])
+        .pipe(concat("all.js"))
+        .pipe(uglify())
+        .pipe(rename({suffix: ".min"}))
+        .pipe(gulp.dest("./dist/js/"))
+        .pipe(browserSync.stream());
+});
 
-// gulp.task("uglify", function () {
-//     return gulp.src("lib/bundle.js")
-//         .pipe(rename("bundle.min.js"))
-//         .pipe(uglify(/* options */))
-//         .pipe(gulp.dest("lib/"));
-// });
+gulp.task("watch-js", () => {
+    return gulp.watch("./js/*.js", gulp.series("minify-js"));
+});
+
+//task to watch just css + js
+
+gulp.task("watch", () => {
+    return gulp.watch(["./js/*.js", "./scss/*.scss"], gulp.series("styles", "minify-js"));
+});
 
 
-// // watch & default tasks
+// // sync & set default tasks
 
-// gulp.task('watch', function () {
-// 	return gulp.watch('./scss/*.scss', gulp.series('styles'));
-// });
+gulp.task("serve", () => {
+    browserSync.init({
+        server: {
+            baseDir: "./"
+        }
+    });    
+    gulp.watch("./scss/*.scss", gulp.series("styles"))
+    gulp.watch("./*.html").on('change', browserSync.reload);
+    gulp.watch("./js/*.js", gulp.series("minify-js"))
+});
 
-// // Static Server + watching scss/html files
-// gulp.task('serve', ['sass'], function() {
-
-//     browserSync.init({
-//         server: "./"
-//     });
-
-//     gulp.watch("./scss/*.scss", ['sass']);
-//     gulp.watch("./*.html").on('change', browserSync.reload);
-// });
-
-// gulp.task('default', ['styles', 'serve']);
+gulp.task('default', ['serve']);
