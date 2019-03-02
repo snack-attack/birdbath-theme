@@ -60,9 +60,6 @@ $breakpoint-md: 768px;
 $breakpoint-lg: 992px;
 $breakpoint-xl: 1200px;
 
-/*=====  End of Breakpoints  ======*/
-
-
 .container {
     width: 100%;
     margin: 0 auto;
@@ -84,26 +81,13 @@ $breakpoint-xl: 1200px;
     max-width: 1140px; }
 }
 
+/*=====  End of Breakpoints  ======*/
+
 
 /*=============================================
 =            LAYOUT
 =============================================*/
 
-.inline {
-    display: inline-block;
-}
-  
-.block {
-    display: block; 
-}
-
-.sticky {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 100;
-}
 
 /*=====  End of Section LAYOUT  ======*/
 
