@@ -33,7 +33,7 @@ h1, h2, h3, h4 {
   font-size: 2rem; }
 
 /* GENERAL STYLES */
-li {
+li, ul {
   list-style: none;
   display: inline-block; }
 
@@ -48,7 +48,7 @@ a {
   width: 100%;
   margin: 0 auto; }
 
-@media (min-width: 576px) {
+@media (min-width: 575px) {
   .container {
     max-width: 540px; } }
 
@@ -84,4 +84,19 @@ a {
 /*=============================================
 =            HEADER
 =============================================*/
+nav {
+  float: right; }
+  nav ul {
+    margin: 0;
+    padding: 0; }
+    nav ul li {
+      float: left;
+      position: relative; }
+      nav ul li a {
+        display: block;
+        padding: 0 20px;
+        line-height: 70px;
+        background: #fff;
+        color: #2B2C6A; }
+
 /*=====  End of Section HEADER  ======*/
