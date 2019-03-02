@@ -211,7 +211,7 @@ nav {
     }
   }
   
-  @media only screen and (max-width: $breakpoint) {
+  @media only screen and (max-width: $breakpoint-md) {
     .nav-mobile {
       display: block;
     }
@@ -238,9 +238,9 @@ nav {
     }
   }
   
-  @media screen and (min-width: $breakpoint) {
+  @media screen and (min-width: $breakpoint-md) {
     .nav-list {
-      display: block !important;
+      display: block;
     }
   }
   
