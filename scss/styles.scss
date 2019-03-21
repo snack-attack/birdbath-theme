@@ -111,11 +111,26 @@ $nav-background: #fff;
 $nav-font-color: #2B2C6A;
 $link-hover-color: #2B2C6A;
 
-.nav-list {
-    display: none;
+nav {
+    width: 100%;
+    padding: $nav-height 0 15px;
+        ul {
+            display: none;
+            li {
+            float: none;
+            a {
+                padding: 15px;
+                line-height: 20px;
+            }
+            ul li a {
+                padding-left: 30px;
+            }
+        }
+    }
 }
 
 .nav-mobile {
+    display: block;
     position: absolute;
     top: 0;
     right: 0;
@@ -164,24 +179,6 @@ $link-hover-color: #2B2C6A;
     }
   }
 
-nav {
-    width: 100%;
-    padding: $nav-height 0 15px;
-        ul {
-            display: none;
-            li {
-            float: none;
-            a {
-                padding: 15px;
-                line-height: 20px;
-            }
-            ul li a {
-                padding-left: 30px;
-            }
-        }
-    }
-}
-
 .nav-dropdown {
     position: static;
 }
@@ -190,6 +187,35 @@ nav {
     .nav-mobile {
         display: none;
     }
+
+    .nav-list {
+        display: block !important;
+      }
+    }
+    .navigation {
+        height: $nav-height;
+        background: $nav-background;
+      }
+      
+      .nav-container {
+        max-width: $content-width;
+        margin: 0 auto;
+      }
+      
+      .brand {
+        position: absolute;
+        padding-left: 20px;
+        float: left;
+        line-height: $nav-height;
+        text-transform: uppercase;
+        font-size: 1.4em;
+        a,
+        a:visited {
+          color: $nav-font-color;
+          text-decoration: none;
+        }
+    }
+
     nav {
         float: right;
         ul {
@@ -208,6 +234,7 @@ nav {
             }
         }
     }
+}
 }
 
 
