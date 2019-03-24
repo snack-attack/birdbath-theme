@@ -1,0 +1,155 @@
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+$brand-blue: #2B2C6A;
+$brand-light: #EAEAF1;
+
+:root {
+    font-size: 62.5%;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+/* Hide y-scrollbar in Chrome & Safari */
+::-webkit-scrollbar { 
+    display: none; 
+    width: 0 !important;
+}
+
+@font-face {
+    font-family: 'PL Regular';
+    src: url('/dist/assets/fonts/Proza_Libre/ProzaLibre-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'PL Bold';
+    src: url('/dist/assets/fonts/Proza_Libre/ProzaLibre-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'PL SemiBold';
+    src: url('/dist/assets/fonts/Proza_Libre/ProzaLibre-SemiBold.ttf');
+}
+
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
+}
+
+body {
+    margin: 0;
+    line-height: 1.5;
+    color: #262626;
+    text-align: left;
+    background-color: #fff; 
+    font-family: 'PL Regular';
+    color: $brand-blue;
+}
+
+
+/*=============================================
+=            GENERAL STYLES
+=============================================*/
+
+
+/*=====  End of GENERAL STYLES  ======*/
+
+
+/*=============================================
+=           Breakpoints
+=============================================*/
+
+$breakpoint-xs: 480px;
+$breakpoint-sm: 575px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+.container-fluid {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+}
+
+/*=====  End of Breakpoints  ======*/
+
+
+/*=============================================
+=            LAYOUT
+=============================================*/
+
+
+/*=====  End of Section LAYOUT  ======*/
+
+
+
+/*=============================================
+=            HEADER
+=============================================*/
+
+
+/*----------  Top Navigation  ----------*/
+nav {
+    width: 100%;
+}
+
+.navbar-brand {
+    text-transform: capitalize;
+    color: $brand-blue;
+    font-size: 1.35rem;
+}
+
+.navbar-brand svg {
+    height: 30px;
+    width: 30px;
+}
+
+@media only screen and (min-width: $breakpoint-md) {
+    .navbar-brand svg {
+        height: 50px;
+        width: 50px; 
+    }
+}
+
+.navbar-collapse a {
+    color: $brand-blue;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+}
+
+.navbar-collapse a:hover {
+    background-color: $brand-blue;
+    color: $brand-light;
+    border-radius: 3px;
+}
+
+
+.navbar-light .navbar-toggler {
+    color: transparent;
+    border-color: transparent;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url('/dist/assets/imgs/navbar-toggler-icon.svg');
+}
+
+/*=====  End of Section HEADER  ======*/
+
+
+
+/*=============================================
+=            TEXT ELEMENTS
+=============================================*/
+
+.leader-text {
+    max-width: 70%;
+    margin: 0 auto;
+    font-size: 1.35rem; 
+}
+
+
+/*=====  End of Section comment blockHomepage  ======*/
+
+

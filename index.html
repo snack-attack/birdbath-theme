@@ -9,47 +9,95 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./dist/css/normalize.css">
-        <link rel="stylesheet" href="./dist/css/styles.min.css">
+        <link rel="stylesheet" href="dist/css/normalize.css">
+        <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="dist/css/main.min.css">
     </head>
-    <body class="container">
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        <header>
-            <section class="navigation">
-                <div class="nav-container">
-                    <div class="brand">
-                        <a href="#!"><img src="dist/assets/imgs/BIRDBath-Logo.png"></a>
-                        <p>Bath Institute for Rheumatic Disease</p>
-                      </div>
-                </div>
-                <nav>
-                    <div class="nav-mobile">
-                        <a id="nav-toggle" href="#!"><span></span></a>
-                    </div>
-                    <ul class="nav-list">
-                        <li>
-                            <a href="#!">Research</a>
-                        </li>
-                        <li>
-                            <a href="#!">For Professionals</a>
-                        </li>
-                        <li>
-                            <a href="#!">For Patients & Public</a>
-                        </li>
-                        <li>
-                            <a href="#!">About Us</a>
-                        </li>
-                        <li>
-                            <a href="#!">Contact</a>
-                        </li>
-                    </ul>
-                    </nav>
-                    </div>
-            </section>
-        </header>
-        
-        <script src="" async defer></script>
+    <body class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">
+                <svg class="d-inline-block align-middle" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 149 160.2" preserveAspectRatio="xMidYMid meet"><defs><style>.cls-1{fill:#fff;}.cls-2{fill:#2b2c6a;}</style></defs><title>BIRDlogo</title><path class="cls-1" d="M291.18,208.22a71.79,71.79,0,0,1-71.72-69.09l-.08-1.87V52.43H363v85.73l-.07,1A71.79,71.79,0,0,1,291.18,208.22Z" transform="translate(-216.18 -50.23)"/><path class="cls-2" d="M360.78,54.63v82.61l-.07,1.8a69.86,69.86,0,0,1-21.33,47.47,69.29,69.29,0,0,1-96.4,0A69.85,69.85,0,0,1,221.66,139l-.08-1.82V54.63h139.2m4.4-4.4h-148v89h.08c1.68,39.6,34.12,71.19,73.92,71.19s72.25-31.59,73.92-71.19h.08v-89Z" transform="translate(-216.18 -50.23)"/><path class="cls-2" d="M300.48,151.52a141,141,0,0,0,11,11.34s-12.67,1.24-21.3,1.3V80.91c.51.27,10.24,5.45,10.24,9.76s-6.57,14.73-6.57,14.73,9.13-9.65,30.88-16.94,26-3.65,26-3.65-12.59,20.59-17.34,23.06-13.16.52-27.29,11.6-14.73,19-14.73,19S293,143.18,300.48,151.52Z" transform="translate(-216.18 -50.23)"/><path class="cls-2" d="M290.18,50.23V210.42c-39.8,0-72.24-31.59-73.92-71.19h-.08v-89Z" transform="translate(-216.18 -50.23)"/><path class="cls-1" d="M280.06,151.53a138.22,138.22,0,0,1-10.82,11.34s12.46,1.25,20.94,1.3V80.91c-.49.27-10.06,5.45-10.06,9.77s6.46,14.72,6.46,14.72-9-9.64-30.37-16.94-25.57-3.65-25.57-3.65S243,105.4,247.69,107.88s12.95.52,26.84,11.6,14.48,19,14.48,19S287.44,143.19,280.06,151.53Z" transform="translate(-216.18 -50.23)"/></svg>
+                <span class="navbar-brand-text d-lg-none">Bath Institute for Rheumatic Diseases</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end text-center" id="navbarNavDropdown">
+                <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#">Research</a>
+                <a class="nav-item nav-link" href="#">For Professionals</a>
+                <a class="nav-item nav-link" href="#">For Patients & Public</a>
+                <a class="nav-item nav-link" href="#">About Us</a>
+                <a class="nav-item nav-link" href="#">Contact</a>
+            </div>
+        </nav>
+
+        <section class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4">Bath Institute for Rheumatic Diseases</h1>
+                <p class="lead">Supporting arthritis research, education & patient engagement</p>
+            </div>
+        </section>
+
+
+        <section class="text-justify justify-content-center">
+            <h1 class="display-4 text-center py-4">Welcome</h1>
+            <div class="leader-text">
+                <p class="">The Bath Institute for Rheumatic Diseases (BIRD), a registered charity, exists to support arthritis
+                        research, education and patient engagement so that we can improve treatment for patients with
+                        rheumatic diseases.</p>
+                <p class="">Rheumatology is the study and treatment of arthritis, including a number of autoimmune diseases,
+                        pain disorders affecting bones, joints, soft tissue and tendons. There are more than 200 types of
+                        rheumatic diseases, including rheumatoid arthritis, psoriatic arthritis, ankylosing spondylitis,
+                        systemic sclerosis, lupus (SLE), Raynaud’s, vasculitis, osteoarthritis, gout, back pain, osteoporosis and
+                        tendinitis.</p>
+                <p class="">
+                    People of any age are affected, including children, but patient numbers are increasing with the
+                number of older people in the population. These diseases are the cause of great pain and suffering
+                and one of the main causes of disability in Britain. In the long term, our work helps almost
+                everyone, because only one person in fifty escapes some form of rheumatic complaint in their lives.</p>
+            </div>
+        </section>
+
+        <footer class="pt-4 my-md-5 pt-md-5">
+            <div class="row justify-content-center">
+                <h3 class="text-uppercase">Bath Institute for Rheumatic Diseases</h3>
+            </div>
+            <div class="row justify-content-center">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter-square"></i>
+            </div>
+            <nav class="nav justify-content-center">
+                <a class="nav-item nav-link" href="#">Research</a>
+                <a class="nav-item nav-link" href="#">For Professionals</a>
+                <a class="nav-item nav-link" href="#">For Patients & Public</a>
+                <a class="nav-item nav-link" href="#">About Us</a>
+                <a class="nav-item nav-link" href="#">Contact</a> 
+            </nav>
+            <nav class="nav justify-content-center">
+                    <a class="nav-item nav-link" href="#">Terms & Conditions</a>
+                    <a class="nav-item nav-link" href="#">Privacy & Cookies Statement</a>
+                    <a class="nav-item nav-link" href="#">Make a Donation</a>
+                    <a class="nav-item nav-link" href="#">Registered Charity No. 1040650</a>
+            </nav>
+        </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </body>
 </html>

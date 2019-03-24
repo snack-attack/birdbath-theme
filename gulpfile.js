@@ -18,15 +18,15 @@ let browserSync = require('browser-sync').create();
 //compile sass and minify css
 
 gulp.task("sass", () => {
-    return gulp.src("./scss/styles.scss")
+    return gulp.src("./scss/main.scss")
         .pipe(sass())
         .pipe(gulp.dest("./dist/css/"))
-        .pipe(rename("styles.css"))
+        .pipe(rename("main.css"))
         .pipe(browserSync.stream());
 });
 
 gulp.task("minify-css", () => {
-    return gulp.src("./dist/css/styles.css")
+    return gulp.src("./dist/css/main.css")
         .pipe(cleanCSS({compatibility: "ie8"}))
         .pipe(rename({suffix: ".min"}))
         .pipe(gulp.dest("./dist/css/"))
@@ -42,9 +42,8 @@ gulp.task("watch-css", () => {
 //combine then minify js files
 
 gulp.task("minify-js", () => {
-    return gulp.src(["./js/jquery-*.js", "./js/popper.js", "./js/bootstrap.js", "./js/*.js"])
+    return gulp.src(["./js/*.js"])
         .pipe(concat("all.js"))
-        .pipe(uglify())
         .pipe(rename({suffix: ".min"}))
         .pipe(gulp.dest("./dist/js/"))
         .pipe(browserSync.stream());
@@ -69,7 +68,7 @@ gulp.task("watch", () => {
 });
 
 
-// // sync & set default tasks
+// sync & set default tasks
 
 gulp.task("serve", () => {
     browserSync.init({
