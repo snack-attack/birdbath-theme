@@ -7020,8 +7020,10 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
+/*=============================================
+=            SCROLLBARS
+=============================================*/
 :root {
-  font-size: 62.5%;
   scrollbar-width: none;
   -ms-overflow-style: none; }
 
@@ -7029,6 +7031,17 @@ a.text-dark:hover, a.text-dark:focus {
 ::-webkit-scrollbar {
   display: none;
   width: 0 !important; }
+
+/*=====  End of SCROLLBARS  ======*/
+/*=============================================
+=            COLORS
+=============================================*/
+/*=====  End of Section COLORS  ======*/
+/*=============================================
+=            TYPOGRAPHY
+=============================================*/
+:root {
+  font-size: 62.5%; }
 
 @font-face {
   font-family: 'PL Regular';
@@ -7042,6 +7055,10 @@ a.text-dark:hover, a.text-dark:focus {
   font-family: 'PL SemiBold';
   src: url("/dist/assets/fonts/Proza_Libre/ProzaLibre-SemiBold.ttf"); }
 
+/*=====  End of TYPOGRAPHY  ======*/
+/*=============================================
+=            GENERAL STYLES
+=============================================*/
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -7058,29 +7075,25 @@ body {
   font-family: 'PL Regular';
   color: #2B2C6A; }
 
-/*=============================================
-=            GENERAL STYLES
-=============================================*/
 /*=====  End of GENERAL STYLES  ======*/
 /*=============================================
 =           Breakpoints
+=============================================*/
+/*=====  End of Breakpoints  ======*/
+/*=============================================
+=            LAYOUT
 =============================================*/
 .container-fluid {
   margin: 0 auto;
   padding: 0;
   width: 100%; }
 
-/*=====  End of Breakpoints  ======*/
+/*=====  End of LAYOUT  ======*/
 /*=============================================
-=            LAYOUT
+=            NAVBAR
 =============================================*/
-/*=====  End of Section LAYOUT  ======*/
-/*=============================================
-=            HEADER
-=============================================*/
-/*----------  Top Navigation  ----------*/
-nav {
-  width: 100%; }
+.navbar {
+  padding: 1.2rem 1rem; }
 
 .navbar-brand {
   text-transform: capitalize;
@@ -7088,8 +7101,11 @@ nav {
   font-size: 1.35rem; }
 
 .navbar-brand svg {
-  height: 30px;
-  width: 30px; }
+  height: 40px;
+  width: 40px; }
+
+.navbar-brand-text {
+  color: #2B2C6A; }
 
 @media only screen and (min-width: 768px) {
   .navbar-brand svg {
@@ -7099,7 +7115,11 @@ nav {
 .navbar-collapse a {
   color: #2B2C6A;
   text-transform: uppercase;
-  font-size: 1.4rem; }
+  font-size: 2rem; }
+
+@media only screen and (min-width: 992px) {
+  .navbar-collapse a {
+    font-size: 1.6rem; } }
 
 .navbar-collapse a:hover {
   background-color: #2B2C6A;
@@ -7111,15 +7131,44 @@ nav {
   border-color: transparent; }
 
 .navbar-light .navbar-toggler-icon {
-  background-image: url("/dist/assets/imgs/navbar-toggler-icon.svg"); }
+  background-image: url("/dist/assets/imgs/navbar-toggler-icon.svg");
+  width: 35px;
+  height: 25px;
+  margin-left: 2rem; }
 
-/*=====  End of Section HEADER  ======*/
+/*=====  End of NAVBAR  ======*/
 /*=============================================
-=            TEXT ELEMENTS
+=            LEAD 
 =============================================*/
-.leader-text {
-  max-width: 70%;
-  margin: 0 auto;
-  font-size: 1.35rem; }
+.lead {
+  z-index: 0;
+  position: relative;
+  margin-bottom: 1.6rem; }
 
-/*=====  End of Section comment blockHomepage  ======*/
+.lead-title {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  background: #2B2C6A;
+  z-index: 1;
+  width: 75%;
+  position: absolute;
+  top: 4rem; }
+
+.lead h1 {
+  padding: 1rem 3.2rem;
+  color: #EAEAF1;
+  font-size: 4rem;
+  letter-spacing: 0;
+  margin-bottom: 0; }
+
+.lead-text {
+  max-width: 80%;
+  margin: 3.2rem auto;
+  font-size: 2rem;
+  box-shadow: 3px 3px 4px -1px rgba(0, 0, 0, 0.5); }
+
+@media only screen and (min-width: 992px) {
+  .lead-text {
+    text-align: justify;
+    box-shadow: none; } }
+
+/*=====  End of LEAD  ======*/

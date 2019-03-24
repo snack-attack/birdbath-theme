@@ -1,10 +1,12 @@
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 
-$brand-blue: #2B2C6A;
-$brand-light: #EAEAF1;
+
+
+/*=============================================
+=            SCROLLBARS
+=============================================*/
 
 :root {
-    font-size: 62.5%;
     scrollbar-width: none;
     -ms-overflow-style: none;
 }
@@ -13,6 +15,28 @@ $brand-light: #EAEAF1;
 ::-webkit-scrollbar { 
     display: none; 
     width: 0 !important;
+}
+
+/*=====  End of SCROLLBARS  ======*/
+
+
+
+/*=============================================
+=            COLORS
+=============================================*/
+
+$brand-blue: #2B2C6A;
+$brand-light: #EAEAF1;
+
+
+/*=====  End of Section COLORS  ======*/
+
+
+/*=============================================
+=            TYPOGRAPHY
+=============================================*/
+:root {
+    font-size: 62.5%;
 }
 
 @font-face {
@@ -29,6 +53,18 @@ $brand-light: #EAEAF1;
     font-family: 'PL SemiBold';
     src: url('/dist/assets/fonts/Proza_Libre/ProzaLibre-SemiBold.ttf');
 }
+
+
+/*=====  End of TYPOGRAPHY  ======*/
+
+
+
+
+
+
+/*=============================================
+=            GENERAL STYLES
+=============================================*/
 
 html {
     font-family: sans-serif;
@@ -48,12 +84,6 @@ body {
     color: $brand-blue;
 }
 
-
-/*=============================================
-=            GENERAL STYLES
-=============================================*/
-
-
 /*=====  End of GENERAL STYLES  ======*/
 
 
@@ -67,11 +97,6 @@ $breakpoint-md: 768px;
 $breakpoint-lg: 992px;
 $breakpoint-xl: 1200px;
 
-.container-fluid {
-    margin: 0 auto;
-    padding: 0;
-    width: 100%;
-}
 
 /*=====  End of Breakpoints  ======*/
 
@@ -80,19 +105,22 @@ $breakpoint-xl: 1200px;
 =            LAYOUT
 =============================================*/
 
+.container-fluid {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+}
 
-/*=====  End of Section LAYOUT  ======*/
+/*=====  End of LAYOUT  ======*/
 
 
 
 /*=============================================
-=            HEADER
+=            NAVBAR
 =============================================*/
 
-
-/*----------  Top Navigation  ----------*/
-nav {
-    width: 100%;
+.navbar {
+    padding: 1.2rem 1rem;
 }
 
 .navbar-brand {
@@ -102,8 +130,12 @@ nav {
 }
 
 .navbar-brand svg {
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
+}
+
+.navbar-brand-text {
+    color: $brand-blue;
 }
 
 @media only screen and (min-width: $breakpoint-md) {
@@ -116,7 +148,13 @@ nav {
 .navbar-collapse a {
     color: $brand-blue;
     text-transform: uppercase;
-    font-size: 1.4rem;
+    font-size: 2rem;
+}
+
+@media only screen and (min-width: $breakpoint-lg) {
+    .navbar-collapse a {
+        font-size: 1.6rem;
+    }
 }
 
 .navbar-collapse a:hover {
@@ -133,23 +171,56 @@ nav {
 
 .navbar-light .navbar-toggler-icon {
     background-image: url('/dist/assets/imgs/navbar-toggler-icon.svg');
+    width: 35px;
+    height: 25px;
+    margin-left: 2rem;
 }
 
-/*=====  End of Section HEADER  ======*/
+/*=====  End of NAVBAR  ======*/
 
 
 
 /*=============================================
-=            TEXT ELEMENTS
+=            LEAD 
 =============================================*/
+.lead {
+    z-index: 0;
+    position: relative;
+    margin-bottom: 1.6rem;
+}
 
-.leader-text {
-    max-width: 70%;
-    margin: 0 auto;
-    font-size: 1.35rem; 
+.lead-title {
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+    background: $brand-blue;
+    z-index: 1;
+    width: 75%;
+    position: absolute;
+    top: 4rem;
+}
+
+.lead h1 {
+    padding: 1rem 3.2rem;
+    color: $brand-light;
+    font-size: 4rem;
+    letter-spacing: 0;
+    margin-bottom: 0;
+}
+
+.lead-text {
+    max-width: 80%;
+    margin: 3.2rem auto;
+    font-size: 2rem; 
+    box-shadow: 3px 3px 4px -1px rgba(0,0,0,0.50);
+}
+
+@media only screen and (min-width: $breakpoint-lg) {
+    .lead-text {
+        text-align: justify;
+        box-shadow: none;
+    }
 }
 
 
-/*=====  End of Section comment blockHomepage  ======*/
+/*=====  End of LEAD  ======*/
 
 
