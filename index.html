@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!DOCTYPE html> <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
@@ -13,6 +12,7 @@
         <link rel="stylesheet" href="dist/css/main.min.css">
     </head>
     <body class="container-fluid">
+        <!-- main navbar -->
         <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand d-inline-block" href="#">
                 <svg class="d-inline-block align-middle mr-2" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 149 160.2" preserveAspectRatio="xMidYMid meet"><defs><style>.cls-1{fill:#fff;}.cls-2{fill:#2b2c6a;}</style></defs><title>BIRDlogo</title><path class="cls-1" d="M291.18,208.22a71.79,71.79,0,0,1-71.72-69.09l-.08-1.87V52.43H363v85.73l-.07,1A71.79,71.79,0,0,1,291.18,208.22Z" transform="translate(-216.18 -50.23)"/><path class="cls-2" d="M360.78,54.63v82.61l-.07,1.8a69.86,69.86,0,0,1-21.33,47.47,69.29,69.29,0,0,1-96.4,0A69.85,69.85,0,0,1,221.66,139l-.08-1.82V54.63h139.2m4.4-4.4h-148v89h.08c1.68,39.6,34.12,71.19,73.92,71.19s72.25-31.59,73.92-71.19h.08v-89Z" transform="translate(-216.18 -50.23)"/><path class="cls-2" d="M300.48,151.52a141,141,0,0,0,11,11.34s-12.67,1.24-21.3,1.3V80.91c.51.27,10.24,5.45,10.24,9.76s-6.57,14.73-6.57,14.73,9.13-9.65,30.88-16.94,26-3.65,26-3.65-12.59,20.59-17.34,23.06-13.16.52-27.29,11.6-14.73,19-14.73,19S293,143.18,300.48,151.52Z" transform="translate(-216.18 -50.23)"/><path class="cls-2" d="M290.18,50.23V210.42c-39.8,0-72.24-31.59-73.92-71.19h-.08v-89Z" transform="translate(-216.18 -50.23)"/><path class="cls-1" d="M280.06,151.53a138.22,138.22,0,0,1-10.82,11.34s12.46,1.25,20.94,1.3V80.91c-.49.27-10.06,5.45-10.06,9.77s6.46,14.72,6.46,14.72-9-9.64-30.37-16.94-25.57-3.65-25.57-3.65S243,105.4,247.69,107.88s12.95.52,26.84,11.6,14.48,19,14.48,19S287.44,143.19,280.06,151.53Z" transform="translate(-216.18 -50.23)"/></svg>
@@ -33,57 +33,80 @@
                 <a class="nav-item nav-link" href="#">Contact</a>
             </div>
         </nav>
-        
-        <section class="d-none d-lg-block jumbotron jumbotron-fluid jumbo-lg">
+        <!-- header for web -->
+        <header class="d-none d-lg-block jumbotron jumbotron-fluid jumbo-lg">
             <div class="container">
                 <h1 class="display-4">Bath Institute for Rheumatic Diseases</h1>
                 <p class="lead">Supporting arthritis research, education & patient engagement</p>
             </div>
-        </section>
+        </header>
         
-        <section class="justify-content-center">
+        <!-- header for mobile -->
+        <header class="justify-content-center">
             <div class="lead d-lg-none">
                 <img class="d-block d-lg-none img-fluid" src="dist/assets/imgs/unsplash.jpg">
                 <div class="lead-title">
                     <h1>Welcome</h1>
                 </div>
             </div>
+        </header>
+
+        <!-- text-tile -->
+        <section>
             <div>
                 <h1 class="d-none d-lg-block text-center">Welcome</h1>
-                <div class="lead-text">
-                    <p>The Bath Institute for Rheumatic Diseases (BIRD), a registered charity, exists to support arthritis research, education and patient engagement so that we can improve treatment for patients with rheumatic diseases.</p>
+                <div class="lead-text px-3 pt-5 pb-1">
+                    <p class="">The Bath Institute for Rheumatic Diseases (BIRD), a registered charity, exists to support arthritis research, education and patient engagement so that we can improve treatment for patients with rheumatic diseases.</p>
                     <p class="">Rheumatology is the study and treatment of arthritis, including a number of autoimmune diseases, pain disorders affecting bones, joints, soft tissue and tendons. There are more than 200 types of rheumatic diseases, including rheumatoid arthritis, psoriatic arthritis, ankylosing spondylitis, systemic sclerosis, lupus (SLE), Raynaud’s, vasculitis,osteoarthritis, gout, back pain, osteoporosis and tendinitis.</p>
                     <p class="">People of any age are affected, including children, but patient numbers are increasing with the number of older people in the population. These diseases are the cause of great pain and suffering and one of the main causes of disability in Britain. In the long term, our work helps almost everyone, because only one person in fifty escapes some form of rheumatic complaint in their lives.</p>
                 </div>
             </div>
         </section>
 
-        <section class="d-inline-flex">
-                <div class="card">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Research Funding</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-outline-primary">Go somewhere</a>
+        <!-- h2-accordian -->
+
+        <section class="accordion" id="accordionMain">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Research Funding</button>
+                    </h2>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionMain">
+                    <div class="card-body">We make ‘pump priming’ grants to support research in the field of bone and joint diseases and fund the training of PhD students, clinical research fellows and post-doctoral research assistants.
+                        <button class="btn btn-outline-primary mt-4 d-block">Learn More</button>
                     </div>
                 </div>
-                <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Research Funding</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-outline-primary">Go somewhere</a>
+            </div>
+
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Professional Education</button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionMain">
+                    <div class="card-body">We provide free educational and professional development opportunities, such as conferences and courses on the impact of bone and joint diseases for healthcare professionals.
+                        <button class="btn btn-outline-primary mt-4 d-block">Learn More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Upcoming Events</button>
+                    </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionMain">
+                        <div class="card-body">We run a programme of Patient and Public Engagement which supports patients, their families and carers with the latest information in their diseases areas and involves them in research.
+                            <button class="btn btn-outline-primary mt-4 d-block">Learn More</button>
                         </div>
                 </div>
-                <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Research Funding</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-outline-primary">Go somewhere</a>
-                        </div>
-                </div>
+            </div>
         </section>
+
+        <!-- main footer -->
 
         <footer class="pt-4 my-md-5 pt-md-5">
             <h3 class="text-uppercase text-center">Bath Institute for Rheumatic Diseases</h3>
