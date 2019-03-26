@@ -203,7 +203,7 @@ $breakpoint-xl: 1200px;
 
 
 /*=============================================
-=            LEAD 
+=           PAGE-HEADER
 =============================================*/
 .lead {
     z-index: 0;
@@ -215,7 +215,7 @@ $breakpoint-xl: 1200px;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
     background: $brand-blue;
     z-index: 1;
-    width: 75%;
+    width: 85%;
     position: absolute;
     top: 4rem;
 }
@@ -228,25 +228,35 @@ $breakpoint-xl: 1200px;
     margin-bottom: 0;
 }
 
-.lead-text {
-    max-width: 80%;
-    margin: 3.2rem auto;
+/*=====  End of PAGE-HEADER  ======*/
+
+/*=============================================
+=            TEXT-TILE
+=============================================*/
+
+.text-tile {
+    max-width: 85%;
+    margin: 2.4rem auto;
     font-size: 2rem; 
     box-shadow: 3px 3px 4px -1px rgba(0,0,0,0.50);
 }
 
 @media only screen and (min-width: $breakpoint-lg) {
-    .lead-text {
+    .text-tile {
         text-align: justify;
         box-shadow: none;
     }
 }
 
-/*=====  End of LEAD  ======*/
+/*=====  End of TEXT-TILE  ======*/
+
+
+
+
 
 
 /*=============================================
-=            ACCORDIAN MAIN
+=            h2-ACCORDIAN
 =============================================*/
 .accordion .card {
     border: 1px solid #fff;
@@ -268,7 +278,7 @@ $breakpoint-xl: 1200px;
     color: $brand-light;
 }
 
-/*=====  End of ACCORDIAN MAIN  ======*/
+/*=====  End of H2-ACCORDIAN  ======*/
 
 
 
