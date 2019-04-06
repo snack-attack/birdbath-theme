@@ -46,6 +46,11 @@ $brand-teal: #25718C;
 }
 
 @font-face {
+    font-family: 'PL Medium';
+    src: url('/dist/assets/fonts/Proza_Libre/ProzaLibre-Medium.ttf');
+}
+
+@font-face {
     font-family: 'PL Bold';
     src: url('/dist/assets/fonts/Proza_Libre/ProzaLibre-Bold.ttf');
 }
@@ -55,6 +60,29 @@ $brand-teal: #25718C;
     src: url('/dist/assets/fonts/Proza_Libre/ProzaLibre-SemiBold.ttf');
 }
 
+h1 {
+    padding: 1rem 3.2rem;
+    color: $brand-light;
+    font-size: 4rem;
+    letter-spacing: 0;
+    margin-bottom: 0;
+}
+
+h3 {
+    font-family: 'PL Medium';
+    font-size: 2rem;
+}
+
+h4,
+h5 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.6rem;
+}
+
+h5 {
+    color: $brand-teal;
+    font-size: 1.4rem;
+}
 
 /*=====  End of TYPOGRAPHY  ======*/
 
@@ -220,15 +248,26 @@ $breakpoint-xl: 1200px;
     top: 4rem;
 }
 
-.lead h1 {
-    padding: 1rem 3.2rem;
-    color: $brand-light;
-    font-size: 4rem;
-    letter-spacing: 0;
-    margin-bottom: 0;
+/*=====  End of PAGE-HEADER  ======*/
+
+
+
+/*=============================================
+=            SECTION HEADER
+=============================================*/
+.section-title {
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+    background: $brand-blue;
+    width: 65%;
+    margin-top: 8rem;
 }
 
-/*=====  End of PAGE-HEADER  ======*/
+
+
+
+/*=====  End of SECTION HEADER  ======*/
+
+
 
 /*=============================================
 =            TEXT-TILE
@@ -256,7 +295,7 @@ $breakpoint-xl: 1200px;
 
 
 /*=============================================
-=            h2-ACCORDIAN
+=            SUBHEADER-ACCORDIAN (MOBILE)
 =============================================*/
 .accordion .card {
     border: 1px solid #fff;
@@ -278,7 +317,32 @@ $breakpoint-xl: 1200px;
     color: $brand-light;
 }
 
-/*=====  End of H2-ACCORDIAN  ======*/
+/*=====  End of SUBHEADER-ACCORDIAN  ======*/
+
+
+/*=============================================
+=            NEWS ACCORDIAN (MOBILE)
+=============================================*/
+.news-accordian {
+    padding: 4rem 3rem;
+}
+
+.news-accordian h3 {
+    margin-top: 2rem;
+}
+
+.news-accordian h4 {
+    margin: 2rem 0;
+}
+
+
+
+
+
+
+/*=====  End of NEWS ACCORDIAN  ======*/
+
+
 
 
 
