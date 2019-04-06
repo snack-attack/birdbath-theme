@@ -7094,6 +7094,14 @@ h5 {
   background: transparent;
   color: #25718C; }
 
+.btn-primary {
+  background-color: #25718C;
+  font-size: 1.6rem;
+  border: none;
+  color: #EAEAF1;
+  margin-bottom: 3rem;
+  padding: 1rem 4rem; }
+
 /*=====  End of BUTTONS  ======*/
 /*=============================================
 =            GENERAL STYLES
@@ -7243,7 +7251,8 @@ body {
 =            NEWS ACCORDIAN (MOBILE)
 =============================================*/
 .news-accordian {
-  padding: 4rem 3rem; }
+  padding: 4rem 3rem;
+  padding-bottom: 0; }
 
 .news-accordian h3 {
   margin-top: 2rem; }
@@ -7252,3 +7261,36 @@ body {
   margin: 2rem 0; }
 
 /*=====  End of NEWS ACCORDIAN  ======*/
+/*=============================================
+=            FOOTER
+=============================================*/
+footer {
+  margin: 6rem auto; }
+
+footer h3 {
+  font-size: 2.6rem; }
+
+footer a {
+  font-family: 'PL Regular';
+  color: #262626;
+  text-transform: uppercase; }
+
+.footer-pages {
+  margin: 1.6rem auto; }
+
+.footer-pages a {
+  min-width: 100%;
+  text-align: center; }
+
+.footer-links a {
+  font-size: 1.2rem;
+  padding-left: 5px;
+  padding-right: 5px; }
+
+.fa-facebook {
+  color: #4267B2; }
+
+.fa-twitter-square {
+  color: #1DA1F2; }
+
+/*=====  End of FOOTER  ======*/

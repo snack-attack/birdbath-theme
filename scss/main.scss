@@ -1,11 +1,8 @@
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 
-
-
 /*=============================================
 =            SCROLLBARS
 =============================================*/
-
 :root {
     scrollbar-width: none;
     -ms-overflow-style: none;
@@ -19,19 +16,17 @@
 
 /*=====  End of SCROLLBARS  ======*/
 
-
-
 /*=============================================
 =            COLORS
 =============================================*/
-
 $brand-blue: #2B2C6A;
 $brand-light: #EAEAF1;
 $brand-teal: #25718C;
-
+$brand-black: #262626;
+$facebook: #4267B2;
+$twitter: #1DA1F2;
 
 /*=====  End of Section COLORS  ======*/
-
 
 /*=============================================
 =            TYPOGRAPHY
@@ -86,7 +81,6 @@ h5 {
 
 /*=====  End of TYPOGRAPHY  ======*/
 
-
 /*=============================================
 =            BUTTONS
 =============================================*/
@@ -103,18 +97,20 @@ h5 {
     color: $brand-teal;
 }
 
+.btn-primary {
+    background-color: $brand-teal;
+    font-size: 1.6rem;
+    border: none;
+    color: $brand-light;    
+    margin-bottom: 3rem;
+    padding: 1rem 4rem;
+}
 
 /*=====  End of BUTTONS  ======*/
-
-
-
-
-
 
 /*=============================================
 =            GENERAL STYLES
 =============================================*/
-
 html {
     font-family: sans-serif;
     line-height: 1.15;
@@ -136,25 +132,20 @@ body {
 
 /*=====  End of GENERAL STYLES  ======*/
 
-
 /*=============================================
 =           Breakpoints
 =============================================*/
-
 $breakpoint-xs: 480px;
 $breakpoint-sm: 575px;
 $breakpoint-md: 768px;
 $breakpoint-lg: 992px;
 $breakpoint-xl: 1200px;
 
-
 /*=====  End of Breakpoints  ======*/
-
 
 /*=============================================
 =            LAYOUT
 =============================================*/
-
 .container-fluid {
     margin: 0 auto;
     padding: 0;
@@ -163,12 +154,9 @@ $breakpoint-xl: 1200px;
 
 /*=====  End of LAYOUT  ======*/
 
-
-
 /*=============================================
 =            NAVBAR
 =============================================*/
-
 .navbar {
     padding: 1.2rem 1rem;
 }
@@ -228,8 +216,6 @@ $breakpoint-xl: 1200px;
 
 /*=====  End of NAVBAR  ======*/
 
-
-
 /*=============================================
 =           PAGE-HEADER
 =============================================*/
@@ -250,8 +236,6 @@ $breakpoint-xl: 1200px;
 
 /*=====  End of PAGE-HEADER  ======*/
 
-
-
 /*=============================================
 =            SECTION HEADER
 =============================================*/
@@ -262,17 +246,11 @@ $breakpoint-xl: 1200px;
     margin-top: 8rem;
 }
 
-
-
-
 /*=====  End of SECTION HEADER  ======*/
-
-
 
 /*=============================================
 =            TEXT-TILE
 =============================================*/
-
 .text-tile {
     max-width: 85%;
     margin: 2.4rem auto;
@@ -288,11 +266,6 @@ $breakpoint-xl: 1200px;
 }
 
 /*=====  End of TEXT-TILE  ======*/
-
-
-
-
-
 
 /*=============================================
 =            SUBHEADER-ACCORDIAN (MOBILE)
@@ -325,6 +298,7 @@ $breakpoint-xl: 1200px;
 =============================================*/
 .news-accordian {
     padding: 4rem 3rem;
+    padding-bottom: 0;
 }
 
 .news-accordian h3 {
@@ -335,12 +309,52 @@ $breakpoint-xl: 1200px;
     margin: 2rem 0;
 }
 
-
-
-
-
-
 /*=====  End of NEWS ACCORDIAN  ======*/
+
+
+/*=============================================
+=            FOOTER
+=============================================*/
+footer {
+    margin: 6rem auto;
+}
+
+footer h3 {
+    font-size: 2.6rem;
+}
+
+footer a {
+    font-family: 'PL Regular';
+    color: $brand-black;
+    text-transform: uppercase;
+}
+
+.footer-pages {
+    margin: 1.6rem auto;
+}
+
+.footer-pages a {
+    min-width: 100%;
+    text-align: center;
+}
+
+.footer-links a {
+    font-size: 1.2rem;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.fa-facebook {
+    color: $facebook;
+}
+
+.fa-twitter-square {
+    color: $twitter;
+}
+
+/*=====  End of FOOTER  ======*/
+
+
 
 
 
