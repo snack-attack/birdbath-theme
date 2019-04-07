@@ -7038,6 +7038,10 @@ a.text-dark:hover, a.text-dark:focus {
 =============================================*/
 /*=====  End of Section COLORS  ======*/
 /*=============================================
+=           Breakpoints
+=============================================*/
+/*=====  End of Breakpoints  ======*/
+/*=============================================
 =            TYPOGRAPHY
 =============================================*/
 :root {
@@ -7059,12 +7063,20 @@ a.text-dark:hover, a.text-dark:focus {
   font-family: 'PL SemiBold';
   src: url("/dist/assets/fonts/Proza_Libre/ProzaLibre-SemiBold.ttf"); }
 
-h1 {
+h2 {
   padding: 1rem 3.2rem;
   color: #EAEAF1;
   font-size: 4rem;
   letter-spacing: 0;
   margin-bottom: 0; }
+
+@media only screen and (min-width: 992px) {
+  h2 {
+    font-family: 'PL SemiBold';
+    font-size: 4.8rem;
+    color: #2B2C6A;
+    text-align: center;
+    padding: 0; } }
 
 h3 {
   font-family: 'PL Medium';
@@ -7094,13 +7106,23 @@ h5 {
   background: transparent;
   color: #25718C; }
 
-.btn-primary {
+.btn-primary,
+.btn-primary-alt {
   background-color: #25718C;
   font-size: 1.6rem;
   border: none;
   color: #EAEAF1;
   margin-bottom: 3rem;
   padding: 1rem 4rem; }
+
+.btn-primary:not(:disabled):not(.disabled):active {
+  background-color: #2B2C6A; }
+
+.btn-primary-alt {
+  background-color: #2B2C6A; }
+
+.btn-primary-alt:hover {
+  color: #EAEAF1; }
 
 /*=====  End of BUTTONS  ======*/
 /*=============================================
@@ -7124,10 +7146,6 @@ body {
   font-size: 1.6rem; }
 
 /*=====  End of GENERAL STYLES  ======*/
-/*=============================================
-=           Breakpoints
-=============================================*/
-/*=====  End of Breakpoints  ======*/
 /*=============================================
 =            LAYOUT
 =============================================*/
@@ -7186,14 +7204,32 @@ body {
 
 /*=====  End of NAVBAR  ======*/
 /*=============================================
+=            HEADER (WEB)
+=============================================*/
+header .container {
+  margin: 6rem 8rem; }
+
+.display-4 {
+  font-family: 'PL SemiBold';
+  font-size: 8rem;
+  color: #576066;
+  padding: 0;
+  margin: 0; }
+
+header h3 {
+  font-family: 'PL Regular';
+  font-size: 3rem; }
+
+/*=====  End of HEADER  ======*/
+/*=============================================
 =           PAGE-HEADER
 =============================================*/
-.lead {
+.header {
   z-index: 0;
   position: relative;
   margin-bottom: 1.6rem; }
 
-.lead-title {
+.header-title {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
   background: #2B2C6A;
   z-index: 1;
@@ -7203,7 +7239,15 @@ body {
 
 /*=====  End of PAGE-HEADER  ======*/
 /*=============================================
-=            SECTION HEADER
+=            SUBHEADER
+=============================================*/
+.subheader-cards {
+  max-width: 85%;
+  margin: 0 auto; }
+
+/*=====  End of SUBHEADER  ======*/
+/*=============================================
+=            SECTION TITLE
 =============================================*/
 .section-title {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
@@ -7211,7 +7255,14 @@ body {
   width: 65%;
   margin-top: 8rem; }
 
-/*=====  End of SECTION HEADER  ======*/
+@media only screen and (min-width: 992px) {
+  .section-title {
+    box-shadow: none;
+    background: none;
+    width: 100%;
+    margin: 4rem auto; } }
+
+/*=====  End of SECTION TITLE  ======*/
 /*=============================================
 =            TEXT-TILE
 =============================================*/
@@ -7219,20 +7270,87 @@ body {
   max-width: 85%;
   margin: 2.4rem auto;
   font-size: 2rem;
-  box-shadow: 3px 3px 4px -1px rgba(0, 0, 0, 0.5); }
+  box-shadow: 3px 3px 4px -1px rgba(0, 0, 0, 0.5);
+  padding: 30px 10px 30px 3px; }
 
 @media only screen and (min-width: 992px) {
   .text-tile {
     text-align: justify;
-    box-shadow: none; } }
+    box-shadow: none;
+    margin: 0 auto;
+    padding: 0; } }
 
 /*=====  End of TEXT-TILE  ======*/
 /*=============================================
-=            SUBHEADER-ACCORDIAN (MOBILE)
+=            SLIDERS
+=============================================*/
+.carousel-item {
+  max-height: 600px; }
+
+.news-title {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem 2rem 2rem 2rem;
+  background: rgba(234, 234, 241, 0.8); }
+
+.news-title h2 {
+  text-align: left;
+  font-family: 'PL Regular';
+  font-size: 3.6rem; }
+
+.carousel-controls {
+  width: 250px;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #25718C; }
+
+.carousel-control-prev-icon {
+  background-image: url("/dist/assets/imgs/previous.svg"); }
+
+.carousel-control-next-icon {
+  background-image: url("/dist/assets/imgs/next.svg"); }
+
+.carousel-control-text {
+  color: #EAEAF1;
+  text-align: center; }
+
+.carousel-inner {
+  float: left; }
+
+.news-detail {
+  position: relative;
+  float: right;
+  background-color: #EAEAF1;
+  min-height: 600px;
+  padding: 2rem; }
+
+.news-detail-content {
+  max-height: 500px;
+  overflow-y: scroll; }
+
+.news-detail button {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 20px; }
+
+/*=====  End of SLIDERS  ======*/
+/*=============================================
+=            ACCORDIONS
 =============================================*/
 .accordion .card {
   border: 1px solid #fff;
   border-left: none; }
+
+.card-title-img {
+  max-width: 25%; }
+
+.accordion-content {
+  max-height: 200px;
+  overflow-y: scroll;
+  background: rgba(241, 241, 241, 0.3); }
 
 .accordion .card-body {
   padding: 1.6rem 2.4rem;
@@ -7246,21 +7364,42 @@ body {
   font-size: 2rem;
   color: #EAEAF1; }
 
-/*=====  End of SUBHEADER-ACCORDIAN  ======*/
+/*=====  End of ACCORDIANS ======*/
 /*=============================================
 =            NEWS ACCORDIAN (MOBILE)
 =============================================*/
-.news-accordian {
+.news-accordion,
+.faq-accordion {
   padding: 4rem 3rem;
   padding-bottom: 0; }
 
-.news-accordian h3 {
+.news-accordion h3 {
   margin-top: 2rem; }
 
-.news-accordian h4 {
+.news-accordion h4 {
   margin: 2rem 0; }
 
 /*=====  End of NEWS ACCORDIAN  ======*/
+/*=============================================
+=            CARDS
+=============================================*/
+.card {
+  border: none; }
+
+.card-header {
+  background: none; }
+
+/*=====  End of CARDS  ======*/
+/*=============================================
+=            PROJECT CARDS
+=============================================*/
+.project-cards {
+  padding: 1.6rem; }
+
+.project-cards button {
+  margin: 3rem 25px; }
+
+/*=====  End of PROJECT CARDS  ======*/
 /*=============================================
 =            FOOTER
 =============================================*/
