@@ -1,0 +1,61 @@
+/*=============================================
+=            NAVBAR
+=============================================*/
+.navbar {
+    padding: 1.2rem 1rem;
+}
+
+.navbar-brand {
+    text-transform: capitalize;
+    color: $brand-blue;
+    font-size: 1.35rem;
+}
+
+.navbar-brand svg {
+    height: 40px;
+    width: 40px;
+}
+
+.navbar-brand-text {
+    color: $brand-blue;
+}
+
+@media only screen and (min-width: $breakpoint-md) {
+    .navbar-brand svg {
+        height: 50px;
+        width: 50px; 
+    }
+}
+
+.navbar-collapse a {
+    color: $brand-blue;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+@media only screen and (min-width: $breakpoint-lg) {
+    .navbar-collapse a {
+        font-size: 1.6rem;
+    }
+}
+
+.navbar-collapse a:hover {
+    background-color: $brand-blue;
+    color: $brand-light;
+    border-radius: 3px;
+}
+
+
+.navbar-light .navbar-toggler {
+    color: transparent;
+    border-color: transparent;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url('/dist/assets/imgs/navbar-toggler-icon.svg');
+    width: 35px;
+    height: 25px;
+    margin-left: 2rem;
+}
+
+/*=====  End of NAVBAR  ======*/

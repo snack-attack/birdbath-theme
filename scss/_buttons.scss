@@ -1,0 +1,39 @@
+/*=============================================
+=            BUTTONS
+=============================================*/
+.btn-outline-primary {
+    border: 0;
+    color: $brand-blue;
+    font-size: 1.6rem;
+    padding: 0;
+    font-family: 'PL SemiBold';
+}
+
+.btn-outline-primary:hover {
+    background: transparent;
+    color: $brand-teal;
+}
+
+.btn-primary,
+.btn-primary-alt {
+    background-color: $brand-teal;
+    font-size: 1.6rem;
+    border: none;
+    color: $brand-light;    
+    margin-bottom: 3rem;
+    padding: 1rem 4rem;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active {
+    background-color: $brand-blue;
+}
+
+.btn-primary-alt {
+    background-color: $brand-blue;
+}
+
+.btn-primary-alt:hover {
+    color: $brand-light;
+}
+
+/*=====  End of BUTTONS  ======*/

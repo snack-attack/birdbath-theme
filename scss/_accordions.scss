@@ -1,0 +1,54 @@
+/*=============================================
+=            ACCORDIONS
+=============================================*/
+.accordion .card {
+    border: 1px solid #fff;
+    border-left: none;
+}
+
+.card-title-img {
+    max-width: 25%;    
+}
+
+.accordion-content {
+    max-height: 200px;
+    overflow-y: scroll;
+    background: rgba(241,241,241,0.30);
+}
+
+.accordion .card-body {
+    padding: 1.6rem 2.4rem;
+    box-shadow: 3px 3px 4px -1px rgba(0,0,0,0.50);
+}
+
+.accordion > .card .card-header {
+    background: $brand-blue;
+    width: 80%;
+}
+
+.accordion .btn-link {
+    font-size: 2rem;
+    color: $brand-light;
+}
+
+/*=====  End of ACCORDIANS ======*/
+
+
+/*=============================================
+=            NEWS ACCORDIAN (MOBILE)
+=============================================*/
+.news-accordion,  
+.faq-accordion {
+    padding: 4rem 3rem;
+    padding-bottom: 0;
+}
+
+.news-accordion h3 {
+    margin-top: 2rem;
+}
+
+.news-accordion h4 {
+    margin: 2rem 0;
+}
+
+/*=====  End of NEWS ACCORDIAN  ======*/

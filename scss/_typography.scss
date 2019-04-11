@@ -1,0 +1,62 @@
+/*=============================================
+=            TYPOGRAPHY
+=============================================*/
+:root {
+    font-size: 62.5%;
+}
+
+@font-face {
+    font-family: 'PL Regular';
+    src: url('/dist/assets/fonts/Proza_Libre/ProzaLibre-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'PL Medium';
+    src: url('/dist/assets/fonts/Proza_Libre/ProzaLibre-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'PL Bold';
+    src: url('/dist/assets/fonts/Proza_Libre/ProzaLibre-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'PL SemiBold';
+    src: url('/dist/assets/fonts/Proza_Libre/ProzaLibre-SemiBold.ttf');
+}
+
+h2 {
+    padding: 1rem 3.2rem;
+    color: $brand-light;
+    font-size: 4rem;
+    letter-spacing: 0;
+    margin-bottom: 0;
+}
+
+@media only screen and (min-width: $breakpoint-lg) {
+    h2 {
+        font-family: 'PL SemiBold';
+        font-size: 4.8rem;
+        color: $brand-blue;
+        text-align: center;
+        padding: 0;
+    }
+}
+
+h3 {
+    font-family: 'PL Medium';
+    font-size: 2rem;
+}
+
+h4,
+h5 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.6rem;
+}
+
+h5 {
+    color: $brand-teal;
+    font-size: 1.4rem;
+}
+
+/*=====  End of TYPOGRAPHY  ======*/

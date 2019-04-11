@@ -1,0 +1,46 @@
+/*=============================================
+=            CARDS
+=============================================*/
+.card {
+    border: none;
+}
+
+.card-header {
+    background: none;
+}
+/*=====  End of CARDS  ======*/
+
+/*=============================================
+=            PROJECT CARDS
+=============================================*/
+.project-cards {
+    padding: 1.6rem;
+}
+
+.project-cards button {
+    margin: 3rem 25px;
+}
+/*=====  End of PROJECT CARDS  ======*/
+
+
+/*=============================================
+=            TEXT-TILE
+=============================================*/
+.text-tile {
+    max-width: 85%;
+    margin: 2.4rem auto;
+    font-size: 2rem; 
+    box-shadow: 3px 3px 4px -1px rgba(0,0,0,0.50);
+    padding: 30px 10px 30px 3px;
+}
+
+@media only screen and (min-width: $breakpoint-lg) {
+    .text-tile {
+        text-align: justify;
+        box-shadow: none;
+        margin: 0 auto;
+        padding: 0;
+    }
+}
+
+/*=====  End of TEXT-TILE  ======*/

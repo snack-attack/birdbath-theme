@@ -1,0 +1,41 @@
+/*=============================================
+=            FOOTER
+=============================================*/
+footer {
+    margin: 6rem auto;
+}
+
+footer h3 {
+    font-size: 2.6rem;
+}
+
+footer a {
+    font-family: 'PL Regular';
+    color: $brand-black;
+    text-transform: uppercase;
+}
+
+.footer-pages {
+    margin: 1.6rem auto;
+}
+
+.footer-pages a {
+    min-width: 100%;
+    text-align: center;
+}
+
+.footer-links a {
+    font-size: 1.2rem;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.fa-facebook {
+    color: $facebook;
+}
+
+.fa-twitter-square {
+    color: $twitter;
+}
+
+/*=====  End of FOOTER  ======*/

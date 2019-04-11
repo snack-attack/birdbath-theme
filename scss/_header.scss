@@ -1,0 +1,74 @@
+/*=============================================
+=            HEADER (WEB)
+=============================================*/
+header .container {
+    margin: 6rem 8rem;
+}
+
+//jumbotron h1
+.display-4 {
+    font-family: 'PL SemiBold';
+    font-size: 8rem;
+    color: $brand-darkgrey;
+    padding: 0;
+    margin: 0;
+}
+
+header h3 {
+    font-family: 'PL Regular';
+    font-size: 3rem;
+}
+
+
+/*=====  End of HEADER  ======*/
+
+/*=============================================
+=           PAGE-HEADER
+=============================================*/
+.header {
+    z-index: 0;
+    position: relative;
+    margin-bottom: 1.6rem;
+}
+
+.header-title {
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+    background: $brand-blue;
+    z-index: 1;
+    width: 85%;
+    position: absolute;
+    top: 4rem;
+}
+
+/*=====  End of PAGE-HEADER  ======*/
+
+
+/*=============================================
+=            SUBHEADER
+=============================================*/
+.subheader-cards {
+    max-width: 85%;
+    margin:0 auto;
+}
+/*=====  End of SUBHEADER  ======*/
+
+/*=============================================
+=            SECTION TITLE
+=============================================*/
+.section-title {
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+    background: $brand-blue;
+    width: 65%;
+    margin-top: 8rem;
+}
+
+@media only screen and (min-width: $breakpoint-lg) {
+    .section-title {
+        box-shadow: none;
+        background: none;
+        width: 100%;
+        margin: 4rem auto;
+    }
+}
+
+/*=====  End of SECTION TITLE  ======*/
