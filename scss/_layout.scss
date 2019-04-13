@@ -1,10 +1,17 @@
-/*=============================================
-=            LAYOUT
-=============================================*/
 .container-fluid {
     margin: 0 auto;
     padding: 0;
     width: 100%;
 }
 
-/*=====  End of LAYOUT  ======*/
+section {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+@media only screen and (min-width: $breakpoint-lg) {
+    section {
+        margin-left: 8rem;
+        margin-right: 8rem;
+    }
+}

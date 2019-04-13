@@ -7355,41 +7355,54 @@ a.text-dark:hover, a.text-dark:focus {
   font-family: 'PL SemiBold';
   src: url("/dist/assets/fonts/Proza_Libre/ProzaLibre-SemiBold.ttf"); }
 
-h2 {
-  padding: 1rem 3.2rem;
+h1 {
+  font-family: 'PL SemiBold';
+  font-size: 8rem;
+  color: #576066;
+  padding: 0;
+  margin: 0; }
+
+h2,
+.subpage-title h1 {
+  font-family: 'PL Regular';
   color: #EAEAF1;
   font-size: 4rem;
   letter-spacing: 0;
   margin-bottom: 0; }
 
 @media only screen and (min-width: 992px) {
-  h2 {
+  h2,
+  .subpage-title h1 {
+    padding: 0;
+    color: #2B2C6A;
     font-family: 'PL SemiBold';
     font-size: 4.8rem;
-    color: #2B2C6A;
-    text-align: center;
-    padding: 0; } }
+    text-align: center; }
+  .subpage-title h1 {
+    font-family: 'PL Regular';
+    color: #EAEAF1; } }
 
 h3 {
+  font-family: 'PL Regular';
+  font-size: 3rem; }
+
+h4 {
   font-family: 'PL Medium';
   font-size: 2rem; }
 
-h4,
-h5 {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 1.6rem; }
+.call-out-card h4 {
+  font-size: 2.6rem; }
 
 h5 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: #25718C;
-  font-size: 1.4rem; }
+  font-size: 1.4rem;
+  text-transform: uppercase; }
 
 /*=====  End of TYPOGRAPHY  ======*/
 /*=============================================
 =            BUTTONS
 =============================================*/
-.btn {
-  color: #EAEAF1; }
-
 .btn-outline-primary {
   border: 0;
   color: #2B2C6A;
@@ -7455,20 +7468,26 @@ body {
   font-size: 1.6rem; }
 
 /*=====  End of GENERAL STYLES  ======*/
-/*=============================================
-=            LAYOUT
-=============================================*/
 .container-fluid {
   margin: 0 auto;
   padding: 0;
   width: 100%; }
 
-/*=====  End of LAYOUT  ======*/
+section {
+  margin-top: 4rem;
+  margin-bottom: 4rem; }
+
+@media only screen and (min-width: 992px) {
+  section {
+    margin-left: 8rem;
+    margin-right: 8rem; } }
+
 /*=============================================
 =            NAVBAR
 =============================================*/
 .navbar {
-  padding: 1.2rem 1rem; }
+  padding: 1.2rem 1rem;
+  background: #ffffff; }
 
 .navbar-brand {
   text-transform: capitalize;
@@ -7512,33 +7531,25 @@ body {
   margin-left: 2rem; }
 
 /*=====  End of NAVBAR  ======*/
-/*=============================================
-=            HEADER (WEB)
-=============================================*/
 header .container {
   margin: 6rem 8rem; }
 
-.display-4 {
-  font-family: 'PL SemiBold';
-  font-size: 8rem;
-  color: #576066;
-  padding: 0;
-  margin: 0; }
+h2,
+.subpage-title h1 {
+  padding: 1rem 3.2rem; }
 
-header h3 {
-  font-family: 'PL Regular';
-  font-size: 3rem; }
+@media only screen and (min-width: 992px) {
+  h2 {
+    padding: 0; } }
 
-/*=====  End of HEADER  ======*/
-/*=============================================
-=           PAGE-HEADER
-=============================================*/
-.header {
+.header-content {
   z-index: 0;
   position: relative;
   margin-bottom: 1.6rem; }
 
-.header-title {
+.homepage-title,
+.subpage-title,
+.section-title {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
   background: #2B2C6A;
   z-index: 1;
@@ -7546,32 +7557,40 @@ header h3 {
   position: absolute;
   top: 4rem; }
 
-/*=====  End of PAGE-HEADER  ======*/
-/*=============================================
-=            SUBHEADER
-=============================================*/
-.subheader-cards {
-  max-width: 85%;
-  margin: 0 auto; }
+.subpage-title {
+  top: 10rem; }
 
-/*=====  End of SUBHEADER  ======*/
-/*=============================================
-=            SECTION TITLE
-=============================================*/
 .section-title {
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-  background: #2B2C6A;
+  position: relative;
   width: 65%;
-  margin-top: 8rem; }
+  margin-bottom: 4rem; }
 
 @media only screen and (min-width: 992px) {
+  header {
+    margin-bottom: 8rem; }
+  .lead img {
+    max-height: 50vh;
+    width: 100%; }
+  .subpage-title h1 {
+    color: #2B2C6A;
+    margin-bottom: 4rem;
+    padding-top: 1.5rem; }
+  .subpage-title {
+    top: 50%;
+    left: 10%;
+    position: absolute;
+    background: #EAEAF1;
+    opacity: 0.75;
+    box-shadow: none;
+    width: 80%; }
   .section-title {
+    margin-bottom: 8rem;
+    margin-top: 8rem;
+    top: initial;
     box-shadow: none;
     background: none;
-    width: 100%;
-    margin: 4rem auto; } }
+    width: 100%; } }
 
-/*=====  End of SECTION TITLE  ======*/
 /*=============================================
 =            SLIDERS
 =============================================*/
@@ -7657,58 +7676,48 @@ header h3 {
 
 /*=====  End of ACCORDIANS ======*/
 /*=============================================
-=            NEWS ACCORDIAN (MOBILE)
+=            NEWS ACCORDIAN
 =============================================*/
 .news-accordion,
 .faq-accordion {
   padding: 4rem 3rem;
   padding-bottom: 0; }
 
-.news-accordion h3 {
-  margin-top: 2rem; }
-
-.news-accordion h4 {
-  margin: 2rem 0; }
-
 /*=====  End of NEWS ACCORDIAN  ======*/
-/*=============================================
-=            CARDS
-=============================================*/
 .card {
   border: none; }
 
 .card-header {
   background: none; }
 
-/*=====  End of CARDS  ======*/
-/*=============================================
-=            PROJECT CARDS
-=============================================*/
+.card-header h2 {
+  padding: 0; }
+
 .project-cards {
   padding: 1.6rem; }
 
 .project-cards button {
   margin: 3rem 25px; }
 
-/*=====  End of PROJECT CARDS  ======*/
-/*=============================================
-=            TEXT-TILE
-=============================================*/
-.text-tile {
-  max-width: 85%;
-  margin: 2.4rem auto;
+.call-out-card {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.5); }
+
+.card-text-only,
+.card-text-btn {
+  margin: 0 auto;
+  max-width: 80%;
   font-size: 2rem;
   box-shadow: 3px 3px 4px -1px rgba(0, 0, 0, 0.5);
   padding: 30px 10px 30px 3px; }
 
 @media only screen and (min-width: 992px) {
-  .text-tile {
+  .card-text-only {
+    max-width: 100%;
     text-align: justify;
     box-shadow: none;
     margin: 0 auto;
     padding: 0; } }
 
-/*=====  End of TEXT-TILE  ======*/
 /*=============================================
 =            FOOTER
 =============================================*/
@@ -7718,7 +7727,8 @@ footer {
 footer h3 {
   font-size: 2.6rem; }
 
-footer a {
+footer a,
+.footer-links p {
   font-family: 'PL Regular';
   color: #262626;
   text-transform: uppercase; }
@@ -7732,8 +7742,10 @@ footer a {
 
 .footer-links a {
   font-size: 1.2rem;
-  padding-left: 5px;
-  padding-right: 5px; }
+  padding: 5px auto; }
+
+.footer-links p {
+  font-size: 1.2rem; }
 
 .fa-facebook {
   color: #4267B2; }
@@ -7741,4 +7753,20 @@ footer a {
 .fa-twitter-square {
   color: #1DA1F2; }
 
+@media only screen and (min-width: 992px) {
+  footer a {
+    color: #2B2C6A; }
+  .footer-pages a {
+    padding: 5px 10px; }
+  .footer-links div:first-of-type {
+    margin-bottom: 1.6rem; }
+  .footer-links a,
+  .footer-links p {
+    font-size: 1.4rem;
+    padding-bottom: 0; }
+  .footer-pages a {
+    min-width: auto; } }
+
 /*=====  End of FOOTER  ======*/
+
+/*# sourceMappingURL=main.css.map */
