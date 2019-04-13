@@ -5,6 +5,7 @@ let sass = require('gulp-sass');
 let uglify = require('gulp-uglify-es');
 let concat = require('gulp-concat');
 let imagemin = require('gulp-imagemin');
+let sourcemaps = require('gulp-sourcemaps');
 let browserSync = require('browser-sync').create();
 
 
@@ -19,7 +20,9 @@ let browserSync = require('browser-sync').create();
 
 gulp.task("sass", () => {
     return gulp.src("./scss/main.scss")
+        .pipe(sourcemaps.init())
         .pipe(sass())
+        .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest("./dist/css/"))
         .pipe(rename("main.css"))
         .pipe(browserSync.stream());
@@ -46,7 +49,7 @@ gulp.task("minify-js", () => {
         .pipe(concat("all.js"))
         .pipe(rename({suffix: ".min"}))
         .pipe(gulp.dest("./dist/js/"))
-        .pipe(browserSync.stream());
+        .pipe(browserSync.stream())
 });
 
 gulp.task("watch-js", () => {

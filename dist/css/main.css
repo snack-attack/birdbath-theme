@@ -7387,6 +7387,9 @@ h5 {
 /*=============================================
 =            BUTTONS
 =============================================*/
+.btn {
+  color: #EAEAF1; }
+
 .btn-outline-primary {
   border: 0;
   color: #2B2C6A;
@@ -7414,7 +7417,8 @@ h5 {
   background-color: #2B2C6A; }
 
 .btn-primary-alt:hover {
-  color: #EAEAF1; }
+  color: #EAEAF1;
+  background-color: #1c1d46; }
 
 /*=====  End of BUTTONS  ======*/
 /*=============================================
