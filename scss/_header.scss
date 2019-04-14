@@ -51,17 +51,16 @@ h2,
     }
     .subpage-title h1 {
         color: $brand-blue;
-        margin-bottom: 4rem;
-        padding-top: 1.5rem;
+        padding: 1.5rem 3.2rem;
     }
     .subpage-title {
-        top: 50%;
-        left: 10%;
+        top: 55%;
+        left: 15%;
         position: absolute;
         background: $brand-light;
-        opacity: 0.75;
+        opacity: 0.95;
         box-shadow: none;
-        width: 80%;
+        width: 70%;
     }
 
     .section-title {

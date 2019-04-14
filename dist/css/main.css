@@ -7478,7 +7478,9 @@ section {
   margin-bottom: 4rem; }
 
 @media only screen and (min-width: 992px) {
-  section {
+  section,
+  .accordion-wrapper,
+  .call-out-card {
     margin-left: 8rem;
     margin-right: 8rem; } }
 
@@ -7573,16 +7575,15 @@ h2,
     width: 100%; }
   .subpage-title h1 {
     color: #2B2C6A;
-    margin-bottom: 4rem;
-    padding-top: 1.5rem; }
+    padding: 1.5rem 3.2rem; }
   .subpage-title {
-    top: 50%;
-    left: 10%;
+    top: 55%;
+    left: 15%;
     position: absolute;
     background: #EAEAF1;
-    opacity: 0.75;
+    opacity: 0.95;
     box-shadow: none;
-    width: 80%; }
+    width: 70%; }
   .section-title {
     margin-bottom: 8rem;
     margin-top: 8rem;
@@ -7647,43 +7648,65 @@ h2,
   margin-bottom: 20px; }
 
 /*=====  End of SLIDERS  ======*/
-/*=============================================
-=            ACCORDIONS
-=============================================*/
+.accordion-wrapper {
+  padding: 4rem 3rem;
+  padding-bottom: 0; }
+  .accordion-wrapper .card-header,
+  .accordion-wrapper .card-body {
+    padding-left: 0;
+    padding-right: 0; }
+  .accordion-wrapper .card-header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15); }
+
+.accordion-wrapper div > h5 {
+  margin-top: 1rem; }
+
 .accordion .card {
   border: 1px solid #fff;
   border-left: none; }
 
-.card-title-img {
-  max-width: 25%; }
-
 .accordion-content {
+  margin: 0 1.25rem;
   max-height: 200px;
   overflow-y: scroll;
-  background: rgba(241, 241, 241, 0.3); }
-
-.accordion .card-body {
-  padding: 1.6rem 2.4rem;
-  box-shadow: 3px 3px 4px -1px rgba(0, 0, 0, 0.5); }
+  background: rgba(241, 241, 241, 0.5); }
 
 .accordion > .card .card-header {
-  background: #2B2C6A;
+  background: #25718C;
   width: 80%; }
+  .accordion > .card .card-header:hover {
+    background-color: #1a5064; }
+  .accordion > .card .card-header h2 button {
+    text-decoration: none; }
 
 .accordion .btn-link {
   font-size: 2rem;
   color: #EAEAF1; }
 
-/*=====  End of ACCORDIANS ======*/
-/*=============================================
-=            NEWS ACCORDIAN
-=============================================*/
-.news-accordion,
-.faq-accordion {
-  padding: 4rem 3rem;
-  padding-bottom: 0; }
+.card-title-img {
+  max-width: 25%; }
 
-/*=====  End of NEWS ACCORDIAN  ======*/
+@media only screen and (min-width: 992px) {
+  .accordion-wrapper {
+    padding: 0; }
+    .accordion-wrapper .card {
+      margin-bottom: 0.75rem; }
+    .accordion-wrapper .card-header {
+      background: #EAEAF1;
+      border-radius: 0.5rem;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+      padding: 0; }
+    .accordion-wrapper .card-body p {
+      font-size: 1.8rem; }
+    .accordion-wrapper .card-text {
+      padding-left: 2.5rem; }
+  .accordion-content {
+    background: none;
+    margin: 0 2.5rem; }
+    .accordion-content button {
+      display: block;
+      margin-top: 2rem; } }
+
 .card {
   border: none; }
 
