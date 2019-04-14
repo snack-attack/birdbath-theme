@@ -76,7 +76,7 @@ gulp.task("watch", () => {
 gulp.task("serve", () => {
     browserSync.init({
         server: {
-            baseDir: "./"
+            baseDir: "localhost:3000"
         }
     });    
     gulp.watch("./scss/*.scss", gulp.series("styles"))
