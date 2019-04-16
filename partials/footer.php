@@ -5,19 +5,19 @@
         <i class="fab fa-twitter-square fa-3x mx-3"></i>
     </div>
     <nav class="footer-pages nav justify-content-center">
-        <a class="nav-item nav-link" href="/research.html">Research</a>
-        <a class="nav-item nav-link" href="#">For Professionals</a>
-        <a class="nav-item nav-link" href="#">For Patients & Public</a>
-        <a class="nav-item nav-link" href="#">About Us</a>
-        <a class="nav-item nav-link" href="#">Contact</a> 
+        <a class="nav-item nav-link" href="/research.php">Research</a>
+        <a class="nav-item nav-link" href="/for-professionals.php">For Professionals</a>
+        <a class="nav-item nav-link" href="/for-patients-and-public.php">For Patients & Public</a>
+        <a class="nav-item nav-link" href="/about-us.php">About Us</a>
+        <a class="nav-item nav-link" href="/contact.php">Contact</a> 
     </nav>
     <nav class="footer-links">
         <div class="row no-gutters justify-content-center">
             <div class="col-xs-4">
-                <a class="nav-item nav-link" href="#">Terms & Conditions</a>
+                <a class="nav-item nav-link" href="/terms-and-conditions.php">Terms & Conditions</a>
             </div>
             <div class="col-xs-4">
-                <a class="nav-item nav-link" href="#">Privacy & Cookies</a>
+                <a class="nav-item nav-link" href="/privacy-and-cookies.php">Privacy & Cookies</a>
             </div>
             <div class="col-xs-4">
                 <a class="nav-item nav-link" href="#">Make A Donation</a>
@@ -25,7 +25,7 @@
         </div>
         <div class="row no-gutters justify-content-center">
             <div class="col-xs-12">
-                <p class="nav-item nav-link pt-0 text-uppercase" href="#">Registered Charity No.
+                <p class="nav-item nav-link pt-0 text-uppercase">Registered Charity No.
                 1040650</p>
             </div>
         </div>

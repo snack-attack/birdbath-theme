@@ -1,7 +1,4 @@
-<!-- section title -->
-<div class="section-title">
-    <h2>Support Us</h2>
-</div>
+
 
 <section class="call-out-card d-none d-lg-block">
     <div class="card mb-3">

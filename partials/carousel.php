@@ -1,6 +1,3 @@
-<div class="section-title">
-    <h2>Latest News</h2>
-</div>
 <div class="d-none d-lg-block">
     <div id="carouselNews" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner w-75">
@@ -53,3 +50,4 @@
         <button class="btn btn-primary-alt">More Details</button>
     </div>
 </div>
+<br style="clear: both;" />

@@ -11,11 +11,11 @@
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-end text-center my-3" id="navbarNavDropdown">
-        <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link" href="/research.html">Research</a>
-        <a class="nav-item nav-link" href="#">For Professionals</a>
-        <a class="nav-item nav-link" href="#">For Patients & Public</a>
-        <a class="nav-item nav-link" href="#">About Us</a>
-        <a class="nav-item nav-link" href="#">Contact</a>
+        <a class="nav-item nav-link active" href="/index.php">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="/research.php">Research</a>
+        <a class="nav-item nav-link" href="/for-professionals.php">For Professionals</a>
+        <a class="nav-item nav-link" href="/for-patients-and-public.php">For Patients & Public</a>
+        <a class="nav-item nav-link" href="/about-us.php">About Us</a>
+        <a class="nav-item nav-link" href="/contact.php">Contact</a>
     </div>
 </nav>

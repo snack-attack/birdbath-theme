@@ -38,8 +38,22 @@ require_once('partials/navbar.php');
 
 <?php 
 require_once('partials/welcome-cards.php');
+?>
+
+<div class="section-title">
+    <h2>Latest News</h2>
+</div>
+
+<?php
 require_once('partials/carousel.php');
 require_once('partials/accordion-with-feature.php');
+?>
+
+<!-- section title -->
+<div class="section-title d-lg-none">
+    <h2>Support Us</h2>
+</div>
+<?php
 require_once('partials/call-out-card.php');
 require_once('partials/footer.php');
 ?>
