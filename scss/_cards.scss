@@ -22,7 +22,8 @@
 }
 
 .card-text-only,
-.card-text-btn {
+.card-text-btn,
+.person-card {
     margin: 0 auto;
     max-width: 80%;
     font-size: 2rem; 
@@ -37,6 +38,14 @@
         box-shadow: none;
         margin: 0 auto;
         padding: 0;
+    }
+}
+
+.person-card {
+    padding: 0;
+    border-radius: 5px;
+    .card-body {
+        background: $person-card-background;
     }
 }
 

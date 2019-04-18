@@ -36,14 +36,84 @@ include('partials/card-text-only.php');
     <h2 class="d-lg-none">The Team</h2>
     <h2 class="d-none d-lg-block">Meet The Team</h2>
 </div>
-<!-- card-person -->
-<div class="person-card card" style="width: 30%;">
-    <img src="dist/assets/imgs/face.jpg" class="card-img-top" alt="">
-    <div class="card-body">
-        <h5 class="card-title">Dr Lego Person</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+<section class="meet-the-team d-none d-lg-block">
+    <div class="row">
+        <div class="col">
+            <div class="person-card card">
+                <img src="dist/assets/imgs/face.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                    <h5>Dr Lego Person</h5>
+                    <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="person-card card">
+                <img src="dist/assets/imgs/face.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                    <h5>Dr Lego Person</h5>
+                    <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="person-card card">
+                <img src="dist/assets/imgs/face.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                    <h5>Dr Lego Person</h5>
+                    <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
+    <div class="row">
+        <div class="col">
+            <div class="person-card card">
+                <img src="dist/assets/imgs/face.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                    <h5>Dr Lego Person</h5>
+                    <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <!-- card-person -->
+            <div class="person-card card">
+                <img src="dist/assets/imgs/face.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                    <h5>Dr Lego Person</h5>
+                    <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <!-- card-person -->
+            <div class="person-card card">
+                <img src="dist/assets/imgs/face.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                    <h5>Dr Lego Person</h5>
+                    <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="meet-the-team d-lg-none">
+    <?php 
+        include('partials/accordion-with-img.php');
+    ?>
+</section> 
+
+
 
 <!-- section title -->
 <div class="section-title">

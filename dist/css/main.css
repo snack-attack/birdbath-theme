@@ -7480,6 +7480,13 @@ section {
   margin-top: 4rem;
   margin-bottom: 4rem; }
 
+.meet-the-team .row {
+  padding-bottom: 60px; }
+
+.meet-the-team .col {
+  padding-left: 0;
+  padding-right: 0; }
+
 @media only screen and (min-width: 992px) {
   section,
   .accordion-wrapper,
@@ -7728,7 +7735,8 @@ h2,
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.5); }
 
 .card-text-only,
-.card-text-btn {
+.card-text-btn,
+.person-card {
   margin: 0 auto;
   max-width: 80%;
   font-size: 2rem;
@@ -7742,6 +7750,12 @@ h2,
     box-shadow: none;
     margin: 0 auto;
     padding: 0; } }
+
+.person-card {
+  padding: 0;
+  border-radius: 5px; }
+  .person-card .card-body {
+    background: #F1F1F1; }
 
 /*=============================================
 =            FOOTER

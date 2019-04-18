@@ -1,5 +1,5 @@
 <!-- accordion-with-img for mobile-->
-<section class="card-with-img d-lg-none">
+>
     <div class="card">
         <div class="card-header d-flex flex-row">
             <div class="card-body">
@@ -25,5 +25,3 @@
             </div>
         </div>
     </div>
-    <button class="btn btn-primary">See All Projects</button>
-</section>
