@@ -1,8 +1,6 @@
 <?php 
-
-require_once('partials/header-top.php');
-require_once('partials/navbar.php');
-
+    require_once('partials/header-top.php');
+    require_once('partials/navbar.php');
 ?>
 
 <!-- header for web -->
@@ -37,7 +35,7 @@ require_once('partials/navbar.php');
 </section>
 
 <?php 
-require_once('partials/welcome-cards.php');
+    require_once('partials/welcome-cards.php');
 ?>
 
 <div class="section-title">
@@ -45,8 +43,8 @@ require_once('partials/welcome-cards.php');
 </div>
 
 <?php
-require_once('partials/carousel.php');
-require_once('partials/accordion-with-feature.php');
+    require_once('partials/carousel.php');
+    require_once('partials/accordion-with-feature.php');
 ?>
 
 <!-- section title -->
@@ -54,8 +52,8 @@ require_once('partials/accordion-with-feature.php');
     <h2>Support Us</h2>
 </div>
 <?php
-require_once('partials/call-out-card.php');
-require_once('partials/footer.php');
+    require_once('partials/call-out-card.php');
+    require_once('partials/footer.php');
 ?>
 
         

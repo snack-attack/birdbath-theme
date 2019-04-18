@@ -121,6 +121,21 @@ include('partials/card-text-only.php');
     <h2 class="d-none d-lg-block">Governance Structure & Annual Reports</h2>
 </div>
 
+<section class="reports container">
+    <div class="row">
+        <div class="col-8"><h3>Council of Management & Governance Structure</h3></div>
+        <div class="col-4">
+            <button class="btn btn-outline-primary d-block">Download Report</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-8"><h3>BIRD’s Annual Report & Financial Overview</h3></div>
+        <div class="col-4">
+            <button class="btn btn-outline-primary d-block">Download Report</button>
+        </div>
+    </div>
+</section>
+
 
 
 <?php

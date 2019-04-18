@@ -7405,14 +7405,17 @@ h5 {
 =============================================*/
 .btn-outline-primary {
   border: 0;
-  color: #2B2C6A;
+  color: #25718C;
   font-size: 1.6rem;
   padding: 0;
   font-family: 'PL SemiBold'; }
 
 .btn-outline-primary:hover {
   background: transparent;
-  color: #25718C; }
+  color: #1a5064; }
+
+.reports .btn-outline-primary {
+  font-size: 2rem; }
 
 .btn-primary,
 .btn-primary-alt {
@@ -7481,11 +7484,14 @@ section {
   margin-bottom: 4rem; }
 
 .meet-the-team .row {
-  padding-bottom: 60px; }
+  padding-bottom: 4rem; }
 
 .meet-the-team .col {
   padding-left: 0;
   padding-right: 0; }
+
+.reports .row:first-of-type {
+  margin-bottom: 2rem; }
 
 @media only screen and (min-width: 992px) {
   section,

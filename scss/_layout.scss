@@ -16,11 +16,17 @@ section {
 
 .meet-the-team {
     .row {
-        padding-bottom: 60px;
+        padding-bottom: 4rem;
     }
     .col {
         padding-left: 0;
         padding-right: 0;
+    }
+}
+
+.reports {
+    .row:first-of-type {
+        margin-bottom: 2rem;
     }
 }
 
