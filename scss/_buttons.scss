@@ -14,9 +14,13 @@
     color: darken($brand-teal, 10%);
 }
 
-.reports .btn-outline-primary {
-    font-size: 2rem;
+.reports {
+    .btn-outline-primary {
+        font-size: 2rem;
+        padding: initial;
+    }
 }
+
 
 .btn-primary,
 .btn-primary-alt {

@@ -19,7 +19,7 @@ require_once('partials/navbar.php');
 </div>
 
 <?php
-include('partials/card-text-only.php');
+include('partials/card-text-img.php');
 ?>
 
 <!-- section title -->
@@ -44,8 +44,7 @@ include('partials/card-text-only.php');
                 <img src="dist/assets/imgs/face.jpg" class="card-img-top" alt="">
                 <div class="card-body">
                     <h5>Dr Lego Person</h5>
-                    <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p>Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
             </div>
@@ -70,6 +69,42 @@ include('partials/card-text-only.php');
             </div>
         </div>
     </div>
+    <div class="row">
+        <div class="col">
+            <div class="person-card card">
+                <img src="dist/assets/imgs/face.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                    <h5>Dr Lego Person</h5>
+                    <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <!-- card-person -->
+            <div class="person-card card">
+                <img src="dist/assets/imgs/face.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                    <h5>Dr Lego Person</h5>
+                    <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <!-- card-person -->
+            <div class="person-card card">
+                <img src="dist/assets/imgs/face.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                    <h5>Dr Lego Person</h5>
+                    <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="row">
         <div class="col">
             <div class="person-card card">
@@ -121,17 +156,26 @@ include('partials/card-text-only.php');
     <h2 class="d-none d-lg-block">Governance Structure & Annual Reports</h2>
 </div>
 
-<section class="reports container">
+<section class="reports">
     <div class="row">
-        <div class="col-8"><h3>Council of Management & Governance Structure</h3></div>
-        <div class="col-4">
-            <button class="btn btn-outline-primary d-block">Download Report</button>
+        <div class="col-12">
+            <h3>Governance</h3>
+            <p>BIRD is governed by a Council of Management which oversees the work of three committees, Finance, Research and Education supported by the executive office.  A guide to our governance structure is available to download here</p>
+        </div>
+        <div class="col-12">
+            <button class="btn btn-outline-primary d-block">Download PDF</button>
         </div>
     </div>
     <div class="row">
-        <div class="col-8"><h3>BIRD’s Annual Report & Financial Overview</h3></div>
-        <div class="col-4">
-            <button class="btn btn-outline-primary d-block">Download Report</button>
+        <div class="col-12">
+            <h3>BIRD’s Annual Report & Financial Overview</h3>
+            <p>BIRD issues its annual report and produces a short summary of its impact in the previous year, both are available to download here:</p>
+        </div>
+        <div class="col-12"> 
+            <button class="btn btn-outline-primary d-block">Download Annual Report</button>
+        </div>
+        <div class="col-12"> 
+            <button class="btn btn-outline-primary d-block">Download Impact Summary</button>
         </div>
     </div>
 </section>

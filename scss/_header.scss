@@ -50,11 +50,10 @@ h2,
         width: 100%;
     }
     .subpage-title h1 {
-        color: $brand-blue;
         padding: 1.5rem 3.2rem;
     }
     .subpage-title {
-        top: 55%;
+        top: 50%;
         left: 15%;
         position: absolute;
         background: $brand-light;
@@ -70,5 +69,8 @@ h2,
         box-shadow: none;
         background: none;
         width: 100%;
+    }
+    .section-title.research {
+        margin-bottom: 0;
     }
 }

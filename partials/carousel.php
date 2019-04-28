@@ -47,7 +47,7 @@
             patients to use a new app to help better understand and treat
             their condition.</p>
         </div>
-        <button class="btn btn-primary-alt">More Details</button>
+        <button class="btn btn-primary-alt"> <a href="/research-detail.php">More Details</a></button>
     </div>
 </div>
 <br style="clear: both;" />

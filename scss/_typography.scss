@@ -25,6 +25,14 @@
     src: url('/dist/assets/fonts/Proza_Libre/ProzaLibre-SemiBold.ttf');
 }
 
+body {
+    line-height: 1.6;
+    color: $brand-black;
+    text-align: left;
+    font-family: 'PL Regular';
+    font-size: 1.6rem;
+}
+
 h1 {
     font-family: 'PL SemiBold';
     font-size: 8rem;
@@ -48,13 +56,22 @@ h2,
         padding: 0;
         color: $brand-blue;
         font-family: 'PL SemiBold';
-        font-size: 4.8rem;
+        font-size: 4.4rem;
         text-align: center;
     }
 
+    .research h2 {
+        text-align: left;
+        margin-left: 8rem;
+        margin-bottom: 0;
+    }
+
     .subpage-title h1 {
-        font-family: 'PL Regular';
-        color: $brand-light;
+        font-size: 6rem;
+    }
+
+    .subpage-title.research h1 {
+        font-size: 4.4rem;
     }
 }
 
@@ -71,13 +88,41 @@ h4 {
 
 .call-out-card h4 {
     font-size: 2.6rem;
+    color: $brand-blue;
 }
 
 h5 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'PL Medium';
     color: $brand-teal;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     text-transform: uppercase;
 }
+
+.welcome h5 {
+    color: $brand-blue;
+}
+
+h6 {
+    color: $brand-blue;
+    font-family: 'PL Regular';
+    font-size: 2.4rem;
+    padding-bottom: 1.2rem;
+    line-height: unset;
+}
+
+address {
+    margin-bottom: 0;
+}
+
+a {
+    color: $brand-light;
+    text-decoration: none;
+    &:hover{
+        text-decoration: none;
+        color: $brand-light;
+    }
+}
+
+
 
 /*=====  End of TYPOGRAPHY  ======*/

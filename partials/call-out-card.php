@@ -10,20 +10,19 @@
                 <div class="card-body pr-5">
                     <h4 class="card-title pt-5">Help Support BIRD Bath by
                     Making a Contribution</h4>
-                    <p class="card-text text-justify">Curabitur non accumsan urna, et
-                    scelerisque orci. Morbi aliquam, neque vitae
-                    bibendum suscipit, orci tortor lacinia justo, vitae
-                    tincidunt massa sem in diam. Maecenas non ex quis
-                    eros vehicula blandit. Nunc in tincidunt odio.
-                    Maecenas non ex quis eros vehicula blandit. Nunc in
-                    tincidunt odio.</p>
-                    <button type="button" class="btn btn-primary">Donate with
-                    VirginGiving</button>
+                    <p class="card-text text-justify">Our work is built on the kind donations and bequests of previous generations.  If you like what we do and would like to help, please consider giving us a donation, or a gift in memory of someone dear to you, inscribed on our benefactors’ board, or even a legacy.  £100 would provide refreshments all year for a monthly patient support group meeting.  £1000 would cover the print and postage costs for a patient information day and newsletter.  £2000 would pay for a Summer Studentship for a scientific researcher.  £10,000 would fund a small-scale pilot research project.</p>
+                    <button type="button" class="btn btn-primary">Visit our Virgin Money Giving page</button>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+
+<!-- section title -->
+<div class="section-title d-lg-none">
+    <h2>Support Us</h2>
+</div>
         
 
 <!-- mob-text-tile-btn -->

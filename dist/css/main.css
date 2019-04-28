@@ -7355,6 +7355,13 @@ a.text-dark:hover, a.text-dark:focus {
   font-family: 'PL SemiBold';
   src: url("/dist/assets/fonts/Proza_Libre/ProzaLibre-SemiBold.ttf"); }
 
+body {
+  line-height: 1.6;
+  color: #262626;
+  text-align: left;
+  font-family: 'PL Regular';
+  font-size: 1.6rem; }
+
 h1 {
   font-family: 'PL SemiBold';
   font-size: 8rem;
@@ -7376,11 +7383,16 @@ h2,
     padding: 0;
     color: #2B2C6A;
     font-family: 'PL SemiBold';
-    font-size: 4.8rem;
+    font-size: 4.4rem;
     text-align: center; }
+  .research h2 {
+    text-align: left;
+    margin-left: 8rem;
+    margin-bottom: 0; }
   .subpage-title h1 {
-    font-family: 'PL Regular';
-    color: #EAEAF1; } }
+    font-size: 6rem; }
+  .subpage-title.research h1 {
+    font-size: 4.4rem; } }
 
 h3 {
   font-family: 'PL Regular';
@@ -7391,13 +7403,34 @@ h4 {
   font-size: 2rem; }
 
 .call-out-card h4 {
-  font-size: 2.6rem; }
+  font-size: 2.6rem;
+  color: #2B2C6A; }
 
 h5 {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'PL Medium';
   color: #25718C;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   text-transform: uppercase; }
+
+.welcome h5 {
+  color: #2B2C6A; }
+
+h6 {
+  color: #2B2C6A;
+  font-family: 'PL Regular';
+  font-size: 2.4rem;
+  padding-bottom: 1.2rem;
+  line-height: unset; }
+
+address {
+  margin-bottom: 0; }
+
+a {
+  color: #EAEAF1;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none;
+    color: #EAEAF1; }
 
 /*=====  End of TYPOGRAPHY  ======*/
 /*=============================================
@@ -7415,7 +7448,8 @@ h5 {
   color: #1a5064; }
 
 .reports .btn-outline-primary {
-  font-size: 2rem; }
+  font-size: 2rem;
+  padding: initial; }
 
 .btn-primary,
 .btn-primary-alt {
@@ -7440,44 +7474,25 @@ h5 {
 /*=============================================
 =            SCROLLBARS
 =============================================*/
-:root {
-  scrollbar-width: none;
-  -ms-overflow-style: none; }
-
-/* Hide y-scrollbar in Chrome & Safari */
-::-webkit-scrollbar {
-  display: none;
-  width: 0 !important; }
-
 /*=====  End of SCROLLBARS  ======*/
 /*=============================================
 =            GENERAL STYLES
 =============================================*/
 html {
   font-family: sans-serif;
-  line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
 body {
   margin: 0;
-  line-height: 1.5;
-  color: #262626;
-  text-align: left;
-  background-color: #fff;
-  font-family: 'PL Regular';
-  color: #2B2C6A;
-  font-size: 1.6rem; }
+  background-color: #fff; }
 
 /*=====  End of GENERAL STYLES  ======*/
 .container-fluid {
   margin: 0 auto;
   padding: 0;
   width: 100%; }
-
-.clear-me {
-  height: 8rem; }
 
 section {
   margin-top: 4rem;
@@ -7490,15 +7505,19 @@ section {
   padding-left: 0;
   padding-right: 0; }
 
-.reports .row:first-of-type {
-  margin-bottom: 2rem; }
+.reports {
+  padding: 4rem; }
+  .reports .row:first-of-type {
+    margin-bottom: 2rem; }
 
 @media only screen and (min-width: 992px) {
   section,
   .accordion-wrapper,
   .call-out-card {
     margin-left: 8rem;
-    margin-right: 8rem; } }
+    margin-right: 8rem; }
+  .reports {
+    padding: initial; } }
 
 /*=============================================
 =            NAVBAR
@@ -7590,10 +7609,9 @@ h2,
     max-height: 50vh;
     width: 100%; }
   .subpage-title h1 {
-    color: #2B2C6A;
     padding: 1.5rem 3.2rem; }
   .subpage-title {
-    top: 55%;
+    top: 50%;
     left: 15%;
     position: absolute;
     background: #EAEAF1;
@@ -7606,7 +7624,9 @@ h2,
     top: initial;
     box-shadow: none;
     background: none;
-    width: 100%; } }
+    width: 100%; }
+  .section-title.research {
+    margin-bottom: 0; } }
 
 /*=============================================
 =            SLIDERS
@@ -7737,9 +7757,6 @@ h2,
   .card-with-img button {
     margin: 3rem 25px; }
 
-.call-out-card {
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.5); }
-
 .card-text-only,
 .card-text-btn,
 .person-card {
@@ -7748,6 +7765,14 @@ h2,
   font-size: 2rem;
   box-shadow: 3px 3px 4px -1px rgba(0, 0, 0, 0.5);
   padding: 30px 10px 30px 3px; }
+
+.person-card p {
+  font-size: 1.4rem; }
+
+.call-out-card,
+.call-out-card img,
+.person-card {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); }
 
 @media only screen and (min-width: 992px) {
   .card-text-only {

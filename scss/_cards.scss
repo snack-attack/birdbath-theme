@@ -17,10 +17,6 @@
     }
 }
 
-.call-out-card {
-    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.50);
-}
-
 .card-text-only,
 .card-text-btn,
 .person-card {
@@ -31,6 +27,16 @@
     padding: 30px 10px 30px 3px;
 }
 
+.person-card p {
+    font-size: 1.4rem;
+}
+
+.call-out-card,
+.call-out-card img,
+.person-card {
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+}
+
 @media only screen and (min-width: $breakpoint-lg) {
     .card-text-only {
         max-width: 100%;
@@ -39,6 +45,8 @@
         margin: 0 auto;
         padding: 0;
     }
+
+
 }
 
 .person-card {

@@ -63,9 +63,11 @@ require_once('partials/navbar.php');
     <h2 class="d-lg-none">Funded Projects</h2>
     <h2 class="d-none d-lg-block">Research Projects Funded by BIRD</h2>
 </div>
-<section class="card-with-img d-lg-none">
 <?php 
 require_once('partials/carousel.php'); 
+?>
+<section class="card-with-img d-lg-none">
+<?php
 require_once('partials/accordion-with-img.php');
 ?>
 <button class="btn btn-primary">See All Projects</button>
